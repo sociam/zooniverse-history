@@ -1,0 +1,157 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement (e.g. for preprints). 
+% Consult the conference website for the camera-ready copyright statement.
+\toappear{}
+
+% Arabic page numbers for submission. 
+% Remove this line to eliminate page numbers for the camera ready copy
+%\pagenumbering{arabic}
+
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage{url}      % llt: nicely formatted URLs
+\usepackage{algorithm,algorithmic}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, 
+% to give it a fighting chance of not being over-written, 
+% since its job is to redefine many LaTeX commands.
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+pdftitle={SIGCHI Conference Proceedings Format},
+pdfauthor={LaTeX},
+pdfkeywords={SIGCHI, proceedings, archival format},
+bookmarksnumbered,
+pdfstartview={FitH},
+colorlinks,
+citecolor=black,
+filecolor=black,
+linkcolor=black,
+urlcolor=black,
+breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+\newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{A Brief History of Zooniverse: Designing for Multi-Domain Citizen Science}
+
+\numberofauthors{1} \author{ (Authors removed for reviewing) }
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\keywords{Citizen science, crowdsourcing, interface design}
+
+%% TODO 
+\category{H.5.m.}{Information Interfaces and Presentation (e.g. HCI)}{Miscellaneous}
+
+%% TODO 
+%% \terms{}
+
+\section{Introduction}
+
+Citizen-science is a form of human-powered computation \cite{} that
+can be both beneficial to those who participate, as an educational
+tool and cognitively-stimulating source of entertainment, and an
+effective method of producing significant, novel scientific
+findings. Crowd-powered citizen science projects have already
+facilitated dozens (hundreds?) of findings \cite{}, through the
+collective contributions of hundreds of thousands of volunteers.
+
+However, designing effective and efficient citizen-powered science
+systems that can achieve both of these goals can be challenging and
+time consuming.  First, systems must cope with a wide range of
+participant expertise, ranging from no prior knowledge in the field to
+significant background and interest.  Moreover, particpants naturally
+feature a wide diversity of natural competencies; some people are
+simply much better at particular tasks than others. Finally, there are
+a large variety of issues pertaining to keeping individuals motivated
+and interested while participating, and allowing individuals to engage
+with the system at a variety of different levels and degrees of
+investment, from the ``sunday scientist'' to regular participation.
+
+In this paper, we provide a detailed case study of a citizen-science
+platform which offers the unique affordance of having expanded to more
+than twenty distinct, successful science projects over the course of
+its two year evolution, on top of a single unified framework known as
+Zooniverse.  The path from its first experimental app, Galaxy Zoo, to
+the more than twenty different projects that have launched on the
+Zooniverse project required generalising the findings from the first
+project to different kinds of tasks in other scientific domains.
+
+%%  naturally Participants come from a wide
+%% audience % with a massive variety of backgrounds and competencies,
+%% such systems interface down to the workflow of how participants' input
+%% is collated, verified, and provided as feedback to the participants,
+%% along with the nature and kind(s) of affordances provided for
+%% communicating and discussing remains challenigng
+
+%% interfaces that have
+%% appropriate affordances, the and features remains challenging, due
+%% to the wide number of design considerations that mustbe taken
+%% jointly into account.
+
+%% Wide variety of expertise
+
+\section{Acknowledgments}
+Acknowledgments omitted for blind review.
+
+\balance
+
+% If you want to use smaller typesetting for the reference list,
+% uncomment the following line:
+% \small
+\bibliographystyle{acm-sigchi}
+\bibliography{morph}
+\end{document}
+
+%% from crw04
+%% \begin{algorithm}[tb]
+%%   \caption{Overview of our general negotiation process, which is common to all of our strategies.  Let $o_\text{own}$ and $o_\text{opp}$ represent our own and the opponent's latest offers, respectively. $t_c$ is the current time and $u_\tau$ is the aspiration level at time $t_c$.}\label{alg:generic-overview}
+%%   \begin{algorithmic}
+%%     \FOR{$t_c \in [0,1]$}
+%%     \STATE $o_\text{opp} \Leftarrow $ {\sc ReceiveOffer}()
+%%     \STATE $u_\tau \Leftarrow $ {\sc SetAspirationLevel}($o_\text{opp}, t_c$)
+%%     \IF{{\sc GetUtility}($o_\text{opp}, t_c$) $\geq u_\tau$}
+%%     \STATE {\sc AcceptOffer}($o_\text{opp}$)
+%%     \RETURN
+%%     \ENDIF
+%%     \STATE $o_\text{own} \Leftarrow $ {\sc GenerateOffer}($u_\tau$)
+%%     \STATE {\sc ProposeOffer}($o_\text{own}$)
+%%     \ENDFOR
+%%     \end{algorithmic}
+%% \end{algorithm}
+
+%%  LocalWords:  artefacts HCI artefact Dropbox Skydrive Google PDF
+%%  LocalWords:  LaTeX versioning throughs interactional CDSSes UI LD
+%%  LocalWords:  bioinformaticians iPad iCloud iCal favour favourite
+%%  LocalWords:  microformats picoformats WebDAV situ VCS scm priori
+%%  LocalWords:  Powerpoint CB's CBs each's bulleted parseable OTs
+%%  LocalWords:  sub-schemas pre Dourish XLSX csv PPTX PPT ICS CalDAV
+%%  LocalWords:  RSS VCF XSLT XLST CSS Dojo PNG
