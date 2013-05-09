@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.2.19)  9 MAY 2013 13:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.2.19)  9 MAY 2013 13:44
 entering extended mode
  %&-line parsing enabled.
 **zooniverse-history.tex
@@ -406,6 +406,30 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 Underfull \vbox (badness 1590) has occurred while \output is active []
 
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 145.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 145.
+
 No file zooniverse-history.bbl.
 
 Package balance Warning: You have called \balance in second column
@@ -418,21 +442,21 @@ Non-PDF special ignored!
 
 ] (./zooniverse-history.aux) ) 
 Here is how much of TeX's memory you used:
- 5436 strings out of 493848
- 76580 string characters out of 3149207
- 151742 words of memory out of 3000000
- 8604 multiletter control sequences out of 15000+200000
+ 5451 strings out of 493848
+ 76751 string characters out of 3149207
+ 153742 words of memory out of 3000000
+ 8611 multiletter control sequences out of 15000+200000
  19050 words of font info for 45 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,8n,36p,275b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,8n,39p,275b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2009/texmf-dist/fonts/enc/dvi
 ps/base/8r.enc}</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/helvetic/uhvb
 8a.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on zooniverse-history.pdf (1 page, 49434 bytes).
+Output written on zooniverse-history.pdf (1 page, 53632 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
