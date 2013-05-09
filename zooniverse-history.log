@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.2.19)  9 MAY 2013 13:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.2.19)  9 MAY 2013 13:46
 entering extended mode
  %&-line parsing enabled.
 **zooniverse-history.tex
@@ -408,22 +408,6 @@ Underfull \vbox (badness 1590) has occurred while \output is active []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 141.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 141.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 143.
 
 
@@ -432,11 +416,27 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
+(hyperref)                removing `math shift' on input line 147.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 151.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 151.
 
 No file zooniverse-history.bbl.
 
@@ -450,21 +450,22 @@ Non-PDF special ignored!
 
 ] (./zooniverse-history.aux) ) 
 Here is how much of TeX's memory you used:
- 5452 strings out of 493848
- 76764 string characters out of 3149207
- 153742 words of memory out of 3000000
- 8612 multiletter control sequences out of 15000+200000
- 19050 words of font info for 45 fonts, out of 3000000 for 9000
+ 5455 strings out of 493848
+ 76797 string characters out of 3149207
+ 154742 words of memory out of 3000000
+ 8613 multiletter control sequences out of 15000+200000
+ 20734 words of font info for 47 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,8n,39p,275b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2009/texmf-dist/fonts/enc/dvi
 ps/base/8r.enc}</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/helvetic/uhvb
 8a.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on zooniverse-history.pdf (1 page, 54253 bytes).
+sr/local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
+exlive/2009/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on zooniverse-history.pdf (1 page, 65297 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
