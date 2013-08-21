@@ -122,20 +122,23 @@ newer systems and activities means that retaining those crucial
 participants who have accrued a degree of experience and competence in
 their tasks is significantly challenging.
 
-% we want to switch this from interviews to (in crowd)
+% we want to switch this from interviews to (in crowd). 
+% TODO - Ramine - please update this ``retrospective reflective inductive...''
+% to something that makes sense - we sat as a group with key team mebers and identified
+% themes
 In this paper, we contribute a detailed case-study of a unique
 citizen-science platform which expanded from a single domain
 experiment to what has been considered a ``factory for citizen
 science'', an authority for generating successful web applications for
 scientists with difficult problems independent of any particular
 domain.  Our analysis, conducted as retrospective reflective inductive
-thematic analysis, aimed to identify the essential lessons learned
-through the trial and error process that resulted from designing each
-app after the previous as an iterative process.  This process that
-allowed the team to explore design variations at mutiple levels, from
-the interface/intraction flow, to the design of social elements
-(discussion forums), to external considerations such as ways to best
-launch and sustain prolonged engagement through external
+thematic analysis with key Zooniverse team members, aimed to identify
+the essential lessons learned through the trial and error process that
+resulted from designing each app after the previous.  This iterative
+process allowed the team to explore design variations at mutiple
+levels, from the interface/intraction flow, to the design of social
+elements (discussion forums), to external considerations such as ways
+to best launch and sustain prolonged engagement through external
 communications.
 
 % note: add the fact that this is data analysis not data acquisition
@@ -150,33 +153,50 @@ of the project in order to provide readers a context for the following
 discussion, followed by a grounded dimensional design analysis of
 particular aspects of Zooniverse's deployment.  Finally, we discuss 
 Zooniverse's team's perspective of the greatest difficulties for
-building more effective citizen science: <X>, <Y> and <Z>, and
+building more effective citizen science: $X$, $Y$ and $Z$, and
 ways that HCI research may be able to help.
 
 \section{Background: A Brief History of the Zooniverse}
 
-\emph{TODO: Can someone fill this in?}  The Zooniverse system was
-conceived .. \cite{fortson2011galaxy} unlike citizen-science projects
-that focus on citizen data collection, the focus of Zooniverse is data
-analysis, that is looking at data that was collected through
-scientific instruments or other means.
-% http://arxiv.org/abs/1104.5513
-% 
+% \emph{TODO: Can someone fill this in?}  The Zooniverse system was conceived .. \cite{fortson2011galaxy} \emph{TODO TODO --- } 
 
-As documented previously by Raddick et al \cite{raddick}, the first
-Zooniverse project, Galaxy Zoo,designed to engage volunteers in the
-morphological classification of images of galaxies, launched in July
-2007\cite{galaxyzoo-launch}. 
+In contrast to crowdsourcing and citizen science projects that focus on participant-driven data collection (e.g., \cite{okolloh2009ushahidi}, \cite{zook2010volunteered}), the focus of Zooniverse is exclusively citizen \emph{data analysis}, that is, to get participants to help classify, label and identify information in large, already extant sets. As documented previously by Fortson et al \cite{fortson2011galaxy}, the first Zooniverse project, Galaxy Zoo, was designed to engage volunteers in the morphological classification of images of galaxies, and launched in July 2007\cite{galaxyzoo-launch}.
 
-\emph{AND THEN STUFF HAPPENED!}  
+\emph{AND THEN STUFF HAPPENED!} 
 
-As of September 2013, the most recent projects were \emph{Worm Watch
-  Lab}, launched in June 2013, $24$th project to launch
+2008 - publication of ``Galaxy Zoo: morphologies'' paper (MNRAS)
+2008 - publication of ``Galaxy Zoo: the large-scale spin statistics of spiral galaxies in the Sloan Digital Sky Survey''  paper (MNRAS) 
+After Galaxy Zoo it was clear that more projects were to follow.
+In develping GZ2 Arfon Smith created `Juggernaut' a Ruby on Rails application, with a MySQL back end, designed as a generalised web application for citizen science projects like Galaxy Zoo.
+%% Neale this is when the ideas of annotations, classifications etc came into being
+Early 2010 saw Solar Stormwatch happen, a project effectively built for someone else (Royal Observatory Greenwich) by the Zooniverse. It used Juggernaut and is still running.
+<<When does the CSA happen!?>>
+October 2010 sees the deployment of Old Weather - the first non-astronomy project, first transcription project and first to incorporate any game mechanics.
+Around the same time we began to take social media more seriously and created a blog network, Twitter/Facebook accounts and even held special events such as the (now annual) Zooniverse Advent Calendar in Dec 2010.
+The Milky Way Project and Planet Hunters launche din Dec 2010 both using public astronomy datasets (like Galaxy Zoo).
+In July 2011 Anicent Lives launches - another non-astronomy, transcription project.
+In August 2011 we created `Talk' as a way to begin to better harness the power of our discussion fora. The PHP fora we used beforehand were beocming difficult to support and hard to mine for data. We felt that there was a better user experience to be created and a better way for citizen scienceto happen, base don the experienc eon the Peas Corp and the stor yof the Voorwerp.
+In August 2011 Ice Hunters went live. Built by a separate development team using our system.
+In Oct 2011 NEEMO was our first purely experimental project - where we weren't even sure of the scientific outcome. We were very clear about this with the users and even housed it in a new `labs' area of the Zooniverse site to be clear that it was an experiment.
+Whale FM (Nov 29 2011) was our first project to use sound. It was clear early on that it wasn't as popular as the others.
+In January 2012, BBC Stargazing Live featured Planet Hunters and we received a million classiciations in just two and a bit days. Planet Hunters was actually more popular in the days following the announcement of our discovering a planet during that time, that it had been during the BBC show.
+In early 2012 we came up with the idea of switching to MongoDB and HTML5 web-apps served from Amazon S3 buckets. The new system: `Ouroboros' would replace Juggernaut and act as a one app serving all our projects. The Juggernaut codebased had become fragmented and each project required its own server and DB. It was getting expensive! IN Sep 2012 we ran `Citizen Science September' and launch four projects in four weeks. These were all base don the new system and it worked out very well.
+BBC Stargazing returned and in Jan 2013 we launched Planet Four, built specially for the show.
+AT writing, the latest project was Worm Watch Labs, the 27th project.
 
-Table $X$ lists all of the Zooniverse projects, launch dates, sizes of
-data sets and classifications as of September 2013.  Figure $Y$,
-likewise, illustrates the growth of the project from June 2007 until
-September 2013.
+%% As of September 2013, the most recent projects were \emph{Worm Watch
+%%   Lab}, launched in June 2013, $24$th project to launch
+
+% First scientific paper from Zooniverse results
+
+Table \ref{project-summary} lists all of the Zooniverse projects,
+launch dates, sizes of data sets and classifications as of September
+2013.  Figure $Y$, likewise, illustrates the growth of the project
+from June 2007 until September 2013.
+
+The complete list of scientific papers that have resulted from
+Zooniverse are compiled on the Zooniverse web site\footnote{Zooniverse
+  Publications - \url{https://www.zooniverse.org/publications}}.
 
 % Terminology of Zooniverse 
 % See blog post by arfon > 
@@ -227,8 +247,8 @@ Galaxy Zoo & Retired & zoo1.galaxyzoo.org & 11 Jul 2007 & Space & 165,000 & 890,
 Galaxy Zoo 2 & Retired & zoo2.galaxyzoo.org & ?? ??? 2009 & Space & XX,XXX & 304.122 & Classification \\
 Galaxy Zoo Mergers & Retired & mergers.galaxyzoo.org & 23 Nov 2009 & Space & 20,588 & 58,956 & Classification \\
 \hline
-Galaxy Zoo Supernova & Retired & supernova.galaxyzoo.org & 26 Mar 2010 & Space & 37,150 & 76,376 & Classification \\
 Solar Stormwatch & Active & solarstormwatch.com & 22 Feb 2010 & Space & 65,971 & YY,YYY & Classification/Marking \\
+Galaxy Zoo Supernova & Retired & supernova.galaxyzoo.org & 26 Mar 2010 & Space & 37,150 & 76,376 & Classification \\
 Galaxy Zoo: Hubble & Retired & zoo3.galaxyzoo.org & 17 Apr 2010 & Space & XX,XXX & ~200,000 & Classification \\
 Moon Zoo & Active & moonzoo.org & 11 May 2010 & Space & 121,251 & 435,314 & Marking \\
 Old Weather & Active & oldweather.org & 12 Oct 2010 & Climate & 32,076 & YY,YYY & Transcription \\
@@ -276,9 +296,10 @@ Worm Watch Lab & Active & wormwatchlab.org & 30 Jun 2013 & Biology & 3,251 & 74,
 %% focused on these themes, upon which a second coding process was
 %% applied by 3 researchers
 
-\section{The Many Dimensions of a Citizen Science Projects} % Themes? Observations?
+\section{Dimensions for Design}
+% Themes? Observations?
 
-\subsection{Key components of a citizen science project}
+\subsection{Key components} %  of a citizen science project
 
 Despite the development of projects in very different domains of academic research, and which involve disparate user interactions, the core requirements for a successful citizen science project remain stable. A `main' interface allows a \emph{user} to complete a \emph{task} when presented with a \emph{subject}. The task is typically constrained by the tools provided (e.g. answer questions from a decision tree, mark craters on an image) and when completed typically results in the presentation of the next subject to be classified. In Zooniverse projects to date, participants perform tasks individually, and are typically not given control over choice of what subjects to work on. This latter choice makes deliberate manipulation of the data difficult and also ensures that project priorities are respected (i.e. it's not just the beautifu/interesting/easy subjects that are worked on). Secondly, some tutorial elements - either as a stand-alone tutorial, as an interactive within the interface or as surrounding context - are required to acquaint users with their tasks. An additional environment for discussion is typically, but not always, provided allowing for more free-form interaction between users and other participants such as scientists, developers and for which work goes beyond the initial task. Extra tools for manipulated subjects or for exploring contextual information may be provided in association with these discussion environments. 
 
@@ -297,20 +318,86 @@ A community of participants is implicitly necessary for a citizen science projec
 
 % almost always needs a discussion space
 
-\subsection{Discussion}
+\subsection{Discussion forums}
+
+The original Zooniverse project, \emph{Galaxy Zoo 1}, launched as a standalone site without a discussion environment, but a forum was added soon after launch\footnote{The original forum is still active at www.galaxyzooforum.org}, primarily in response to the number of emails received by the team. The forum unexpectedly became a vital part of the scientific machinery supported by Galaxy Zoo, with users making use of the site to identify, discuss and advocate for serendipitous discoveries. The canonical example is the object now known as Hanny's Voorwerp \citep{voorwerp}, a galaxy-scale glowing gas cloud which turned out to have been ionized by activity associated with neighboring galaxy's rapidly feeding black hole. In this case the discovery was reported on the forum, but the follow-up work was carried out by the science team themselves. In other examples, though, much more sophisticated behaviour was seen. The discovery of the Galaxy Zoo Peas \citep{Peas}, for example, saw a group of volunteers who had identified the presence of small, round and green objects (hence the name) in the background of some images work together to download and explore metadata on these objects, to write database queries and even, eventually, to create their own citizen science site to assist in further classification of these intriguing objects. The peas turned out to be a new class of galaxy, the most efficient stellar factories in the local Universe, and remain the subject of vigorous debate in the professional astronomical community. 
+
+Structured collaboration also proved effective. Galaxy Zoo science team member Bill Keel from the University of Alabama was able to spend time on the forum, and asked for help with searches for objects such as galaxies which appear to overlap \citep{overlap} (distant galaxies used to illuminate foreground ones can be used to probe the dust content of systems, a matter of some importance to astronomers). This work was also successful, but required Keel to spend substantial time as part of the forum community, something that other science team members were unwilling or unable to do. Furthermore, by 2009 the forum had become less popular; the percentage of Galaxy Zoo users posting on what was a standard Simple Machines forum was very low (less than two percent) and with more than 500,000 posts in more than 10,000 topics it had become difficult to navigate. While it still served the need of a core constituency, it was not engaging the majority of Galaxy Zoo classifiers in science. The low participation rates were mirrored in other Zooniverse projects such as Moon Zoo and Old Weather, although the latter in particular provided a core community with a space to discuss the historical aspects of the project in particular.
+
+Starting from the launch of Planet Hunters in 2010, Zooniverse projects have made use of a custom discussion environment known as `Talk'. It was designed to enable links to be made easily between classification and discussion and to allow science team members as well as advanced volunteers to quickly notice when users were talking about discoveries of potential interest. To understand the design drivers for talk's system of object-orientated discussion, consider the case of a new classifier who had spotted a `pea' in a Galaxy Zoo image. Even if they were to move to the forum, they would have been unable to search for discussion of their or similar objects unless they made the same mental leap to think of a small round celestial object as a kind of vegetable. If they found the right thread, they would have had to upload their image to a linear discussion which might well be in the middle of more detailed analysis. In Talk, by contrast, a single click after classification invites discussion, and lands on a page dedicated to discussing the object that's just been classified. Our putative pea-finder would immediately be able to see what had already been said about this system, and - were it already to be tagged as a 'pea' - to click on 'pea' and realize that there was a much broader conversation going on. This model has been broadly successful, with most of the discoveries made by the Planet Hunters project (including PH1b, the first planet in a system with four stars) coming from discussion between users who found interesting things in the interface and a community of more advanced workers who were able to help the science team follow-up on those discoveries. 
+
+Different prompts to talk.
+
+Galaxy Zoo Peas Corp and Hanny's Voorwerp.
+Created Talk and then found cool planets in PH, Yellowballs tag in MWP, Convict Worm in Seafloor
+
+% \subsection{Forums}
+%% Forums -> 
+%% Introduction of Talk 1.0 -> 
+%% Introduction of Talk 2.0
+%% Organisation and Fragmentation 
+%% Top level organisation, moderators, scientists and how this has changed and impacted 
+
+%% In a study investigating the effect of instructors on forum participation, Mazzolini and Maddison found that instructors who posted frequently on a forum on average produced shorter discussion threads \cite{mazzolini2003sage}. In the Zooniverse environment the participation of `moderators' and `scientists' could be hindering the discussion flow between general science citizens. Furthermore there was a negative correlation between instructor initiated conversations and participation, especially in the advanced units\cite{mazzolini2003sage}. 
+
+%% @Neal does this support your findings so far?
+
+%% Success stories: examples of super-moderators who externally test
+%% contributions and distill them for the scientists
+%% (why only in certain apps and not others?)
+%% (how do super moderators affect the community // roles played)
+
 
 \subsection{Tutorial}
 
-\subsection{Visual Design}
+Video tutorials don't work. People do them but then leave (SSW).
+Compulsory training laos results in a large bounce rate (Moon Zoo)
+With Whale FM and Ancient Lives we used tutorials that were interactive and overlaid on the interface - seemed to work well.
+Then we moved on to the next logical step, which is guiding a user through a classification by annotating the interface as they go along. That's where we are now.
 
-\subsection{Task Design: Presentation considerations}
-%% to gameify or not?
-McGonigal identified four defining elements of a game: a goal, rules, feedback system and voluntary participation. Other features such as leader boards, badges, the "winning" sensation are all used to reinforce these core concepts but do not create a game environment in their own right \cite{mcgonigal2011reality}. To further this gameplay is a state which encourages an optimistic outlook on personal capabilities, partnered with "invigorating rush of activity" \cite{mcgonigal2011reality}. These concepts would support a science citizen, creating a gameplay state to highly motivate and encourage them to undertake difficult challenges. 
+% when we turned on compulsory tutorial -- bounce rate went up
+
+\subsection{Interface Design}
+
+% Does good design improve participation?  Much evidence has suggested that \emph{good design builds trust}, by improving people's subjective appraisal of web sites and applications.  
+
+%% Examples of surface level/aesthetic re-design >  (and perceived effects)
+MoonZoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? % look to see if there was any effect? >> not as far as we can see
+
+%% Examples of thematic redesign encompassing addition of narrative context (and percevied effect) > 
+How to measure engagement
+  how much time spent on the site
+  people stick over a minute, (2-3 mins, high is 20)
+  (moderators of old weather)?
+  % TODO: can we say anything about the effect of the narrative in Old Weather? 
+  % evidence in the discussion forums ? 
+  %   > i wonder why the handwriting has changed?
+  %   > most keen to help each other out -- 
+
+%% Examples of interface affordance design (and perceived effect)
+GZ / GZ2 - so it was turned into a deicsion tree
+  what kind of galaxy, 6 buttons -> decision tree
+% much better data, and it decreased participation
+
+% I DONT KNOW button - don't have one (blog post)
+
+% Surface design doens't matter
+
+Good design builds trust. There is implicit trust in a website that matches the expectations of web users. Online interfaces are judged (consciously or otherwise) in comparison to the pages that a user has recently visited (often only seconds previously) and pages they regular visit. A rising tide of improving visual aesthetic has resulted from a deacde-long virtuous cycle of modern websites attempting to keep pace with the standards of more sophisticated users.
+
+A well-designed website creates trust in new users and comfort in returning visitors. It also encourages sharing by others.
+
+The trajectory of design at the Zooniverse changed dramatically in 2010 with Old Weather, the Milky Way Project and Planet Hunters. % 
+
+Ice Hunters is the exception: a project widely derided for its design, that was very popular and encouraged people to make thousands of classifcations. Could this be an indication that ease of use and accessibility (the goal of Ice Hunters wa sclear and easy to understand) trumps design, at least in the short term.
 
 \subsection{Sustaining Engagement}
-% Boring project problem - a constraint that led to development and
-% technological change
+
+% Feedback - how many have I done? (how many eggs vs how many Xs)
+% Boring project problem - Subject selection - a constraint that led to development and technological change
 % Old Weather : Adding context
+
+\subsubsection{Effect of speed/latency}
 
 %% did they create rules - placing limitations to achieving the goal -> make a challenge
 %% what feedback system did they use and what was the overall goal
@@ -326,22 +413,6 @@ McGonigal identified four defining elements of a game: a goal, rules, feedback s
 % jump straight to action, no introductory video
 % start with 1 GS, interleave gold standards w/ real things
 
-% transcribe bentham
-% sad museum one 
-
-%% \subsection{Forums}
-%% Forums -> 
-%% Introduction of Talk 1.0 -> 
-%% Introduction of Talk 2.0
-%% Organisation and Fragmentation 
-%% Top level organisation, moderators, scientists and how this has changed and impacted 
-In a study investigating the effect of instructors on forum participation, Mazzolini and Maddison found that instructors who posted frequently on a forum on average produced shorter discussion threads \cite{mazzolini2003sage}. In the Zooniverse environment the participation of "moderators" and "scientists" could be hindering the discussion flow between general science citizens. Furthermore there was a negative correlation between instructor initiated conversations and participation, especially in the advanced units\cite{mazzolini2003sage}. 
-%% @Neal does this support your findings so far?
-
-%% Success stories: examples of super-moderators who externally test
-%% contributions and distill them for the scientists
-%% (why only in certain apps and not others?)
-%% (how do super moderators affect the community // roles played)
 
 \subsection{Social Engagement}
 % favouriting, tweeting, blog posts
@@ -355,23 +426,29 @@ In a study investigating the effect of instructors on forum participation, Mazzo
 \section{Discussion}
 
 \subsection{Common Myths of Citizen Science}
-% \subsection{$D$ Myths of Designing for Citizen-Science}
-% \subsection{Myth $X$: Putting new users through a ``tutorial'' is a good idea}
-% \subsection{Myth $Y$: Gameification keeps people motivated}
-% \subsection{Myth $Z$: Participants become domain experts}
-% \subsection{Myth $Z$: Beautiful pictures are necessary}
+\subsection{$D$ Myths of Designing for Citizen-Science}
+\subsection{Myth $X$: Putting new users through a ``tutorial'' is a good idea}
+\subsection{Myth $Y$: Gameification keeps people motivated}
+%% to gameify or not?
+McGonigal identified four defining elements of a game: a goal, rules, feedback system and voluntary participation. Other features such as leader boards, badges, the `winning' sensation are all used to reinforce these core concepts but do not create a game environment in their own right \cite{mcgonigal2011reality}. To further this gameplay is a state which encourages an optimistic outlook on personal capabilities, partnered with `invigorating rush of activity' \cite{mcgonigal2011reality}. These concepts would support a science citizen, creating a gameplay state to highly motivate and encourage them to undertake difficult challenges. 
+\subsection{Myth $Z$: Participants become domain experts}
+\subsection{Myth $Z$: Beautiful pictures are necessary}
+\subsection{Myth $Z$: Moderator involvement encourages discussion}
 
 \subsection{Themes We See Support For}
-% \subsection{Design Builds Trust}
-% \subsection{What makes a good domain?}
+\subsection{Design Builds Trust}
+\subsection{Scaling/latency and practical deployment constraints during design}
+\subsection{What makes a good citizen science project?}
 
 \subsection{Comparison to Other Systems}
 % Comparison with Jeremy Bentham project - failed in the sense that required more energy than was gained out of it, 20 people at the end
 % YourPaintings
 % Be A Martian
 
+\subsection{Engagement: Interestingness x Difficulty x Context}
 
-\subsection{Unsolved mysteries}
+
+% \subsection{Unsolved mysteries}
 
 \section{Related work}
 
