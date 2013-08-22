@@ -375,39 +375,32 @@ With more than 20 projects launched over just a few years, the Zooniverse platfo
 \centering
 \includegraphics[width=0.95\textwidth]{data/launch-profiles/launch-profiles.png}
 \caption{Launch profiles for 4 example Zooniverse projects.}
+\label{launchprofiles}
 \end{figure*}
 
-Shown above are the first three weeks of activity on four Zooniverse projects: Whale FM (Nov 2011), The Andromeda Project (Dec 2012), Snapshot Serengeti (Dec 2012) and Spacewarps (May 2013). Each project displays a subtly different profile of activity in its first days and weeks.
+Shown above in Figure \ref{launchprofiles} are the first three weeks of activity on four Zooniverse projects: Whale FM (Nov 2011), The Andromeda Project (Dec 2012), Snapshot Serengeti (Dec 2012) and Spacewarps (May 2013). Each project displays a subtly different profile of activity in its first days and weeks. % For example ... X and Y .... 
 
-%Add annotations to this plot and talk about events that influenced the profiles. Note that the launch iof Serengeti gives Andromed a boost a week in.
+% TODO: Rob - Add annotations to this plot and talk about events that influenced the profiles. Note that the launch iof Serengeti gives Andromed a boost a week in.
 
 \subsection{Sustaining Engagement}
 
+% Consistent with visitation patterns to most web sites \cite{}, it was observed that visitors to the Zooniverse apps were increasingly likely to leave the site every passing moment on the site, than to stay.  Therefore, engaging users to tasks immediately maximized the amount of potential participation overall.  Even more the likelihood of a later return to the site was (Over half of the classifications were contributed by users who never returned. This of course, has significant implications 
 From the very first moment that a user arrives on a website, they are more likely to leave than to stay. The faster they can be engaged with participation in the main (citizen science) task, the more people will have participated over all.
+% TODO this has a significant implication for the training/tutorial phase for getting new users oriented with their task, as users are likely to leave
 
-A `Call to Action' appears to work increbily well. Sites with clear, succinct front-page descritpions ot a project's intention have lower bounce rates over all (the fraction of people who leave and don't classify). This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation.
+A `Call to Action' appears to work increbily well. Sites with clear, succinct front-page descritpions ot a project's intention have lower bounce rates over all (the fraction of people who leave and don't classify). This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation. % TODO: Can we show examples of a call to action versus not?
 
+\subsubsection{Task complexity}
 Projects with innately simple tasks (e.g. Ice Hunters, Spacewarps) show much higher classifications-per-user numbers than projects with more complex tasks (e.g. Milky Way Project, Cyclone Center). The complexity of a task does not appear to be correalted with how long users spend on the site in any session. Moon Zoo and the Milky Way Project have similar interfaces but very different dwell times. Conversley, Ice Hunters and Old Weather had similar dwell times for many months, despite one being far more complex than the other.
 
+\subsubsection{Speed/Latency}
+
 Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
-
-The combination of \emph{MongoDB} and \emph{Redis} meant not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the numbe rof required classifers over time. Significantly it hasd allowed for subjects to be retired from classification if they contain nothing ot note. This has hugely improved the issue of projects with intrinsically less-appealing or repetetive datasets.  
-
-% Feedback - how many have I done? (how many eggs vs how many Xs)
-% Boring project problem - Subject selection - a constraint that led to development and technological change
-% Old Weather : Adding context  -does this help?
 
 %%   % TODO: can we say anything about the effect of the narrative in Old Weather? 
 %%   % evidence in the discussion forums ? 
 %%   %   > i wonder why the handwriting has changed?
 %%   %   > most keen to help each other out -- 
-
-\subsubsection{Responsiveness and other considerations}
-
-\subsubsection{Interaction Flow}
-% jump straight to action, no introductory video
-% start with 1 GS, interleave gold standards w/ real things
-
 
 %% did they create rules - placing limitations to achieving the goal -> make a challenge
 %% what feedback system did they use and what was the overall goal
@@ -416,6 +409,17 @@ The combination of \emph{MongoDB} and \emph{Redis} meant not-only faster website
 %% posters vs 
 %% adding context: old weather
 %% achieving flow state
+
+The combination of \emph{MongoDB} and \emph{Redis} means not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the numbe rof required classifers over time. Significantly it hasd allowed for subjects to be retired from classification if they contain nothing ot note. This has hugely improved the issue of projects with intrinsically less-appealing or repetetive datasets.  
+
+\subsubsection{Interaction During Classification}
+
+Since Galaxy Zoo 2 there have been occaisonal project-`ometers' created to show progress of the community toward a common goal or project completion. THe Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units.
+
+% Feedback - how many have I done? (how many eggs vs how many Xs)
+% Old Weather : Adding context  -does this help?
+
+In addition to remarks on tutorials, there are other ways to give users feedback about their efforts in citizen science.
 
 %% TODO: Rob: Anything to say about the way we measure engagement? has this changed? 
 %% \subsection{Measuring Engagement}
