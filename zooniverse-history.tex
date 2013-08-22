@@ -369,29 +369,20 @@ A `Call to Action' appears to work increbily well. Sites with clear, succinct fr
 
 Projects with innately simple tasks (e.g. Ice Hunters, Spacewarps) show much higher classifications-per-user numbers than projects with more complex tasks (e.g. Milky Way Project, Cyclone Center). The complexity of a task does not appear to be correalted with how long users spend on the site in any session. Moon Zoo and the Milky Way Project have similar interfaces but very different dwell times. Conversley, Ice Hunters and Old Weather had similar dwell times for many months, despite one being far more complex than the other.
 
+\subsubsection{Speed/Latency}
+
 Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
 
-The combination of \emph{MongoDB} and \emph{Redis} meant not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the numbe rof required classifers over time. Significantly it hasd allowed for subjects to be retired from classification if they contain nothing ot note. This has hugely improved the issue of projects with intrinsically less-appealing or repetetive datasets.  
+The combination of \emph{MongoDB} and \emph{Redis} means not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the numbe rof required classifers over time. Significantly it hasd allowed for subjects to be retired from classification if they contain nothing ot note. This has hugely improved the issue of projects with intrinsically less-appealing or repetetive datasets.  
+
+\subsubsection{Interaction During Classification}
+
+Since Galaxy Zoo 2 there have been occaisonal project-`ometers' created to show progress of the community toward a common goal or project completion. THe Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units.
 
 % Feedback - how many have I done? (how many eggs vs how many Xs)
-% Boring project problem - Subject selection - a constraint that led to development and technological change
 % Old Weather : Adding context  -does this help?
 
-\subsubsection{Interaction Flow}
-% jump straight to action, no introductory video
-% start with 1 GS, interleave gold standards w/ real things
-
-\subsubsection{Effect of speed/latency}
-
-%% did they create rules - placing limitations to achieving the goal -> make a challenge
-%% what feedback system did they use and what was the overall goal
-
-%% icebergs/seal hunting : people really wanted a seal. :( 
-%% audio :: 
-%% posters vs 
-
-%% adding context: old weather
-%% achieving flow state
+In addition to remarks on tutorials, there are other ways to give users feedback about their efforts in citizen science.
 
 \subsubsection{Social Media}
 % favouriting, tweeting, blog posts
