@@ -369,7 +369,9 @@ A `Call to Action' appears to work increbily well. Sites with clear, succinct fr
 
 Projects with innately simple tasks (e.g. Ice Hunters, Spacewarps) show much higher classifications-per-user numbers than projects with more complex tasks (e.g. Milky Way Project, Cyclone Center). The complexity of a task does not appear to be correalted with how long users spend on the site in any session. Moon Zoo and the Milky Way Project have similar interfaces but very different dwell times. Conversley, Ice Hunters and Old Weather had similar dwell times for many months, despite one being far more complex than the other.
 
-The issue of projects with intrinsically dull or repetetive datasets has created technological change in the Zooniverse.
+Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
+
+The combination of \emph{MongoDB} and \emph{Redis} meant not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the numbe rof required classifers over time. Significantly it hasd allowed for subjects to be retired from classification if they contain nothing ot note. This has hugely improved the issue of projects with intrinsically less-appealing or repetetive datasets.  
 
 % Feedback - how many have I done? (how many eggs vs how many Xs)
 % Boring project problem - Subject selection - a constraint that led to development and technological change
