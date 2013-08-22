@@ -325,9 +325,9 @@ Why Twitter box?  To get around thread death: New users come along and say what 
 
 As noted above, a tutorial experience is an essential part of a citizen science project, but designing a tutorial brings one into conflict with several other requirements. In particular, Zooniverse projects are designed to get useful classifications from those who only visit once; an overly elaborate or time consuming tutorial leads to these casual visitors leaving without ever having done anything `real'. This is problematic not only in terms of lost effort but also in failing to present an authentic experience of participation, the very thing that seems to engage potential citizen scientists to return. Tutorial design, therefore, has tended to emphasize presenting only the 
 
-The original Galaxy Zoo included only a few lines of tutorial, followed by a simple test (as described in \citet{Lintott}). The aim of this was both to ensure a minimum level of classification accuracy and to provide feedback to users who it was felt might need reassurance that they were on the right track. However, to encourage participation the bar was set extremely low and the test was essentially ineffective; classification accuracy was ensured by later data reduction, a pattern followed by subsequent projects. Galaxy Zoo 2 included a longer, optional, tutorial which few users read, leading to the adoption (by, for example, Moon Zoo) of video tutorials which no-one watched. The solution now adopted was an inline tutorial which guides users through the interface quickly and gives feedback on classification of one or more initial subjects.
+The original Galaxy Zoo included only a few lines of tutorial, followed by a simple test (as described in \cite{Lintott}). The aim of this was both to ensure a minimum level of classification accuracy and to provide feedback to users who it was felt might need reassurance that they were on the right track. However, to encourage participation the bar was set extremely low and the test was essentially ineffective; classification accuracy was ensured by later data reduction, a pattern followed by subsequent projects. Galaxy Zoo 2 included a longer, optional, tutorial which few users read, leading to the adoption (by, for example, Moon Zoo) of video tutorials which no-one watched. The solution now adopted was an inline tutorial which guides users through the interface quickly and gives feedback on classification of one or more initial subjects.
 
-This solves the problem of teaching classifiers what is expected of them, but consistent learning takes place throughout a citizen scientists' career. \citet{Smith}, for example, show trajectories of classification accuracy for individual users, showing that while large changes most often come early in a user's encounter with a project dramatic changes in accuracy are possible throughout. Each classification provided by a user produces a (perhaps unknown) change in user behaviour through learning, information about the subject under classification and information about the user themselves. Projects such as Planet Hunters, the Andromeda Project and Space Warps include expert-classified or synthetic data which can be used to measure user performance. When presented with synthetic data feedback is given to the user on their performance - essential in preventing them getting excited about discovering simulated planets but which also forms as an ongoing tutorial. 
+This solves the problem of teaching classifiers what is expected of them, but consistent learning takes place throughout a citizen scientists' career. \cite{Smith}, for example, show trajectories of classification accuracy for individual users, showing that while large changes most often come early in a user's encounter with a project dramatic changes in accuracy are possible throughout. Each classification provided by a user produces a (perhaps unknown) change in user behaviour through learning, information about the subject under classification and information about the user themselves. Projects such as Planet Hunters, the Andromeda Project and Space Warps include expert-classified or synthetic data which can be used to measure user performance. When presented with synthetic data feedback is given to the user on their performance - essential in preventing them getting excited about discovering simulated planets but which also forms as an ongoing tutorial. 
 
 Video tutorials don't work. People do them but then leave (SSW).
 Compulsory training results in a large bounce rate (Moon Zoo)
@@ -409,7 +409,10 @@ From the very first moment that a user arrives on a website, they are more likel
 A number of factors also seemed to influence the remaining engagement.  First, having a `Call to Action' appears to improve retention; sites with clear, succinct front-page descritpions ot a project's intention have lower bounce rates overall (the fraction of people who leave and don't classify). This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation. % TODO: Can we show a visual example of a call to action versus not?
 
 % A key factor is 'stickiness' / inherent interestingness of the subject...
-A key factor seems to be the graspability of the task - (and this can be challenging; for example, Galaxy Zoo is not about discovering galaxies, but documenting galaxy evolution as a function of their geometry) 
+
+By no surprise, a key factor that sustains participant motivation is pertains to interesting-ness of the subjects themselves.  For example, those who witness ``beautiful'' galaxies in Galaxy Zoo, a subject containing fun/intersting/cute animals in Snapshot Serengeti, will stay longer and perform more classifications than those who did not see said images.  To measure this, we identified which subjects were most favourited, and examined whether those users who witnessed these subjects stayed longer, which was significant (Statistical measure). %TODO: Rob
+
+Another key factor seems to be the graspability of the task - (and this can be challenging; for example, Galaxy Zoo is not about discovering galaxies, but documenting galaxy evolution as a function of their geometry) 
 
 %  This could be merely a factor of representation - Milky Way vs Planet Hunters 
 
@@ -467,9 +470,17 @@ Often the majority of posts in an online forum are contributed by a minority of 
 \section{Discussion}
 
 \subsection{Common Myths of Citizen Science}
-\subsection{$D$ Myths of Designing for Citizen-Science}
-\subsection{Myth $X$: Putting new users through a `tutorial is a good idea}
+\subsection{Some Myths of Designing for Citizen-Science}
+
+\subsection{Myth $X$: Putting new users through a `tutorial` is a good idea}
+
+\subsection{Myth $X$: Experienced / advanced users perform better than new users}
+We have seen no support for this hypothesis; in fact an examination of projects ($X$ etc) demonstrated no correlation between duration of use and user performance \cite{simpson2013dynamic}. 
+
+However, there was evidence that the ways that people get better at using the interface, and that they understand what they are doing with the interface better; for example, with Snapshot Serengeti they know how to distinguish the categories of animals directly without using the more laborouious decision tree interface for describing the animal's features.
+
 \subsection{Myth $Y$: Citizen science projects have to be `gameified'}
+
 %% to gameify or not?
 McGonigal identified four defining elements of a game: a goal, rules, feedback system and voluntary participation. Other features such as leader boards, badges, the `winning' sensation are all used to reinforce these core concepts but do not create a game environment in their own right \cite{mcgonigal2011reality}. To further this gameplay is a state which encourages an optimistic outlook on personal capabilities, partnered with `invigorating rush of activity' \cite{mcgonigal2011reality}. These concepts would support a science citizen, creating a gameplay state to highly motivate and encourage them to undertake difficult challenges. 
 \subsection{Myth $Y$: I should include a 'Don't Know' Button}
