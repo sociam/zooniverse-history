@@ -388,12 +388,21 @@ From the very first moment that a user arrives on a website, they are more likel
 
 A number of factors also seemed to influence the remaining engagement.  First, having a `Call to Action' appears to improve retention; sites with clear, succinct front-page descritpions ot a project's intention have lower bounce rates overall (the fraction of people who leave and don't classify). This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation. % TODO: Can we show a visual example of a call to action versus not?
 
+% A key factor is 'stickiness' / inherent interestingness of the subject...
+A key factor seems to be the graspability of the task - (and this can be challenging; for example, Galaxy Zoo is not about discovering galaxies, but documenting galaxy evolution as a function of their geometry) 
+
+%  This could be merely a factor of representation - Milky Way vs Planet Hunters 
+
 A second factor pertains to task difficulty. Projects with innately simple to perform tasks (e.g. Ice Hunters, Spacewarps) show much higher classifications-per-user numbers than projects with more difficult tasks (e.g. Milky Way Project, Cyclone Center). The complexity or difficulty of a task does not appear to be correalted with how long users spend on the site in any session, however; Moon Zoo and the Milky Way Project have similar interfaces but very different dwell times. Conversley, Ice Hunters and Old Weather had similar dwell times for many months, despite one being far more complex than the other.
+
+% Having a clear call-to-action / message
+
+% Feedback: progress TODO: (move up here from down below)
 
 % TODO: Move to -------------> out of this section
 \subsection{Deployment Constraints on Design}
 
-\subsubsection{Achieving Low Latency Interaction}
+\subsubsection{Achieving Low-Latency Interaction}
 Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
 
 %%   % TODO: can we say anything about the effect of the narrative in Old Weather? 
@@ -415,7 +424,7 @@ The combination of \emph{MongoDB} and \emph{Redis} means not-only faster website
 
 In addition to remarks on tutorials, there are other ways to give users feedback about their efforts in citizen science.
 
-Since Galaxy Zoo 2 there have been occaisonal project-`ometers' created to show progress of the community toward a common goal or project completion. The Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units\footnote{Units include Square Miles, Football Fields, Taj Mahals, Switzerlands, Utahs, Texas, Polands, Wales, Whales and others -- see http://www.moonzoo.org/moonometer}. These counters exist on many projects but not all.
+Since Galaxy Zoo 2 there have been occaisonal project-`ometers' created to show progress of the community toward a common goal or project completion. The Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units\footnote{Units include Square Miles, Football Fields, Taj Mahals, Switzerlands, Utahs, Texas, Polands, Wales, Whales and others -- see http://www.moonzoo.org/moonometer}. These counters exist on many projects but not all.  % TODO: Effect of this feedback as far as it is known?
 
 % Feedback - how many have I done? (how many eggs vs how many Xs)
 % Old Weather : Adding context  -does this help?
@@ -442,9 +451,9 @@ Often the majority of posts in an online forum are contributed by a minority of 
 \subsection{$D$ Myths of Designing for Citizen-Science}
 \subsection{Myth $X$: Putting new users through a ``tutorial'' is a good idea}
 \subsection{Myth $Y$: Gameification keeps people motivated}
-\subsection{Myth $Y$: I Don't Know Button}
 %% to gameify or not?
 McGonigal identified four defining elements of a game: a goal, rules, feedback system and voluntary participation. Other features such as leader boards, badges, the `winning' sensation are all used to reinforce these core concepts but do not create a game environment in their own right \cite{mcgonigal2011reality}. To further this gameplay is a state which encourages an optimistic outlook on personal capabilities, partnered with `invigorating rush of activity' \cite{mcgonigal2011reality}. These concepts would support a science citizen, creating a gameplay state to highly motivate and encourage them to undertake difficult challenges. 
+\subsection{Myth $Y$: I should include a 'Don't Know' Button}
 \subsection{Myth $Z$: Participants become domain experts}
 \subsection{Myth $Z$: Beautiful pictures are necessary - }
 \subsection{Myth $Z$: The Data Isn't Good/Clean Enough}
