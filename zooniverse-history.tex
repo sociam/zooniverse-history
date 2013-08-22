@@ -241,7 +241,7 @@ Worm Watch Lab & Active & wormwatchlab.org & 30 Jun 2013 & Biology & 3,251 & 74,
 
 \subsection{Key components of a citizen science project}
 
-Despite the development of projects in very different domains of academic research, and which involve disparate user interactions, the core requirements for a successful citizen science project remain stable. A `main' interface allows a \emph{user} to complete a \emph{task} when presented with a \emph{subject}. The task is typically constrained by the tools provided (e.g. answer questions from a decision tree, mark craters on an image) and when completed typically results in the presentation of the next subject to be classified. In Zooniverse projects to date, participants perform tasks individually, and are typically not given control over choice of what subjects to work on. This latter choice makes deliberate manipulation of the data difficult and also ensures that project priorities are respected (i.e. it's not just the beautifu/interesting/easy subjects that are worked on). Secondly, some tutorial elements - either as a stand-alone tutorial, as an interactive within the interface or as surrounding context - are required to acquaint users with their tasks. An additional environment for discussion is typically, but not always, provided allowing for more free-form interaction between users and other participants such as scientists, developers and for which work goes beyond the initial task. Extra tools for manipulated subjects or for exploring contextual information may be provided in association with these discussion environments. 
+Despite the development of projects in very different domains of academic research, and which involve disparate user interactions, the core requirements for a successful citizen science project remain stable. A `main' interface allows a \emph{user} to complete a \emph{task} when presented with a \emph{subject}. The task is typically constrained by the tools provided (e.g. answer questions from a decision tree, mark craters on an image) and when completed typically results in the presentation of the next subject to be classified. In Zooniverse projects to date, participants perform tasks individually, and are typically not given control over choice of what subjects to work on. This latter choice makes deliberate manipulation of the data difficult and also ensures that project priorities are respected (i.e. it's not just the beautiful/interesting/easy subjects that are worked on). Secondly, some tutorial elements - either as a stand-alone tutorial, as an interactive within the interface or as surrounding context - are required to acquaint users with their tasks. An additional environment for discussion is typically, but not always, provided allowing for more free-form interaction between users and other participants such as scientists, developers and for which work goes beyond the initial task. Extra tools for manipulated subjects or for exploring contextual information may be provided in association with these discussion environments. 
 
 A community of participants is implicitly necessary for a citizen science project; crowdsourcing without a crowd is a perhaps unsolvable problem. However, levels of participation and involvement in the community will naturally vary; Zooniverse projects typically receive a substantial number of their classifications from users who will never return. A successful citizen science project will thus be designed to both enable these short-term participants to make useful contributions while still fostering longer-term engagement. This need also illustrates the requirement in most cases to assess the ability or accuracy of participants; many projects thus incorporate `tests', either explicitly or more commonly by including simulated or expert-classified subjects in the workflow presented to users. 
 
@@ -317,6 +317,12 @@ Created Talk and then found cool planets in PH, Yellowballs tag in MWP, Convict 
 
 \subsection{Tutorial}
 
+As noted above, a tutorial experience is an essential part of a citizen science project, but designing a tutorial brings one into conflict with several other requirements. In particular, Zooniverse projects are designed to get useful classifications from those who only visit once; an overly elaborate or time consuming tutorial leads to these casual visitors leaving without ever having done anything `real'. This is problematic not only in terms of lost effort but also in failing to present an authentic experience of participation, the very thing that seems to engage potential citizen scientists to return. Tutorial design, therefore, has tended to emphasize presenting only the 
+
+The original Galaxy Zoo included only a few lines of tutorial, followed by a simple test (as described in \cite{Lintott}). The aim of this was both to ensure a minimum level of classification accuracy and to provide feedback to users who it was felt might need reassurance that they were on the right track. However, to encourage participation the bar was set extremely low and the test was essentially ineffective; classification accuracy was ensured by later data reduction, a pattern followed by subsequent projects. Galaxy Zoo 2 included a longer, optional, tutorial which few users read, leading to the adoption (by, for example, Moon Zoo) of video tutorials which no-one watched. The solution now adopted was an inline tutorial which guides users through the interface quickly and gives feedback on classification of one or more initial subjects.
+
+This solves the problem of teaching classifiers what is expected of them, but consistent learning takes place throughout a citizen scientists' career. \cite{Smith}, for example, show trajectories of classification accuracy for individual users, showing that while large changes most often come early in a user's encounter with a project dramatic changes in accuracy are possible throughout. Each classification provided by a user produces a (perhaps unknown) change in user behaviour through learning, information about the subject under classification and information about the user themselves. Projects such as Planet Hunters, the Andromeda Project and Space Warps include expert-classified or synthetic data which can be used to measure user performance. When presented with synthetic data feedback is given to the user on their performance - essential in preventing them getting excited about discovering simulated planets but which also forms as an ongoing tutorial. 
+
 Video tutorials don't work. People do them but then leave (SSW).
 Compulsory training results in a large bounce rate (Moon Zoo)
 With Whale FM and Ancient Lives we used tutorials that were interactive and overlaid on the interface - seemed to work well.
@@ -329,7 +335,7 @@ Then we moved on to the next logical step, which is guiding a user through a cla
 % Does good design improve participation?  Much evidence has suggested that \emph{good design builds trust}, by improving people's subjective appraisal of web sites and applications.  
 
 %% Examples of surface level/aesthetic re-design >  (and perceived effects)
-MoonZoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? % look to see if there was any effect? >> not as far as we can see
+Moon Zoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? % look to see if there was any effect? >> not as far as we can see
 
 %% Examples of thematic redesign encompassing addition of narrative context (and percevied effect) > 
 How to measure engagement
@@ -350,7 +356,7 @@ GZ / GZ2 - so it was turned into a deicsion tree
 
 % Surface design doesn't matter
 
-Good design builds trust. There is implicit trust in a website that matches the expectations of web users. Online interfaces are judged (consciously or otherwise) in comparison to the pages that a user has recently visited (often only seconds previously) and pages they regular visit. A rising tide of improving visual aesthetic has resulted from a deacde-long virtuous cycle of modern websites attempting to keep pace with the standards of more sophisticated users.
+Good design builds trust. There is implicit trust in a website that matches the expectations of web users. Online interfaces are judged (consciously or otherwise) in comparison to the pages that a user has recently visited (often only seconds previously) and pages they regular visit. A rising tide of improving visual aesthetic has resulted from a decade-long virtuous cycle of modern websites attempting to keep pace with the standards of more sophisticated users, which in turn has raised users' expectations.
 
 A well-designed website creates trust in new users and comfort in returning visitors. It also encourages sharing by others.
 
@@ -358,20 +364,25 @@ The trajectory of design at the Zooniverse changed dramatically in 2010 with Old
 
 Ice Hunters is the exception: a project widely derided for its design, that was very popular and encouraged people to make thousands of classifcations. Could this be an indication that ease of use and accessibility (the goal of Ice Hunters wa sclear and easy to understand) trumps design, at least in the short term.
 
+In 2012 and 2013 there has been a rising fraction of users accessing Zoonivers sites via an iPad. This has led us to test more on iPads, but not to ensure total compatibility. Rather those projects which are suitable for table use -- meaning those that would not be hindered by users operating the site with their fingers on a smaller screem -- are tested for functionality on tablets in general.
+
 \subsection{Launching Projects}
 % Andromeda, Whale FM, Spacewarps and Snapshot Serengeti as case studies
 
 With more than 20 projects launched over just a few years, the Zooniverse platform is host to a series of natural experiments regarding the announcement and subsequent take-up of citizen science projects. There are a large number of variables affecting the potential uptake of any new site including but not limited to; method of announcement (e.g level of press coverage, size of exisiting community), `stickiness' of proposition (i.e. discovering an exoplanet is generally more exciting as a proposition than differentiating genetic subsamples of nematode worms); difficulty of task; technological requirements (e.g. Does the site work on desktops, tablets, smartphones); and many more.
 
-\begin{figure*}
+\begin{figure}
 \centering
-\includegraphics[width=0.95\textwidth]{data/launch-profiles/launch-profiles.png}
+\includegraphics[width=0.48\textwidth]{data/launch-profiles/launch-profiles.png}
 \caption{Launch profiles for 4 example Zooniverse projects.}
-\end{figure*}
+\end{figure}
 
 Shown above are the first three weeks of activity on four Zooniverse projects: Whale FM (Nov 2011), The Andromeda Project (Dec 2012), Snapshot Serengeti (Dec 2012) and Spacewarps (May 2013). Each project displays a subtly different profile of activity in its first days and weeks.
 
 %Add annotations to this plot and talk about events that influenced the profiles. Note that the launch iof Serengeti gives Andromed a boost a week in.
+\subsubsection{Response from Exisiting Zooniverse Community}
+
+After the launch of every project the whole Zooniverse community is emailed an announcement with an explanaiton of the project and how to take part. This pre-exisiting set of users -- who already have a sign-in for any new zooniverse site -- is often enough to create a sizeable surge in activity in rhe arly days of a project. In cases where no press coverage exists this initial boost is sometimes cruical in producing useful data. The case of the Andromeda Project is particularly interesting. This was the Zooniverse's first new space-based project for almost a year and it did not receive signfiicant press coverage. However the resposne from the Zooniverse community was so large that it completed it's entire requirement of 1.1 million classification in just over two weeks. Similarly, the initial surge in traffoc on the Spacewarps project was impressive (10,000 people contributed 500,000 classifications in 24 hours) and sustained (more than 10,000 people were visiting the site every day even three weeks later), and it took days for blogs and news sites to pick up the project and publish about it more widely.
 
 \subsection{Sustaining Engagement}
 
@@ -388,31 +399,36 @@ Creating a responsive online environment requires more sophisticated back end te
 The combination of \emph{MongoDB} and \emph{Redis} means not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the number of required classifiers over time. Significantly it has allowed for subjects to be retired from classification if they contain nothing of note. This has hugely improved the issue of projects with intrinsically less-appealing or repetitive datasets.  
 
 \subsubsection{Interaction During Classification}
+In addition to the above section on tutorials, there are other ways to give users feedback about their efforts in citizen science.
 
-Since Galaxy Zoo 2 there have been occaisonal project-`ometers' created to show progress of the community toward a common goal or project completion. The Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number of planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units.
+Since Galaxy Zoo 2 there have been occaisional project-`ometers' created to show progress of the community toward a common goal or project completion. The Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units\footnote{Units include Square Miles, Football Fields, Taj Mahals, Switzerlands, Utahs, Texas, Polands, Wales, Whales and others -- see http://www.moonzoo.org/moonometer}. These counters exist on many projects but not all.
 
-% Feedback - how many have I done? (how many eggs vs how many Xs)
-% Old Weather : Adding context  -does this help?
+Where they do exist these counters do not normally appear to drive people to participate, but they do appear to be heavily discussed by people writing about projects and by dedicated users noticing the approach of milestones. In the case of Galaxy Zoo 2 there was a drive toward 60 million classifications in March 2010, to mark the completion of the project; whereas in Old Weather the imminent arrival of `100\% Complete' on the homepage caused users to slowdown and literally ration themsevles to abait the project's conclusion.
 
-In addition to remarks on tutorials, there are other ways to give users feedback about their efforts in citizen science.
+Individual counters of a single user's classifications have existed for several projects as well as result in people talking about their own classification count. A volunteer's counter for all projects has existed on the the Zooniverse homepage\footnate{http://www.zooniverse.org} for two years but is rarely discussed and in fact many regular users of the site have no idea it is there!
+
+More recent Zooniverse projects have been able to include synthetic or expert data. This has meant that in many cases a user can be given instant feedback on their classification. The reaction to has been almost universally positive, and it appears to give confidence to some users who might otherwise have not continued with the project. The most recent example is Sapcewarps, which gives continous feedback, although at an ever-decreasing rate, throughout a users time on the site.
 
 \subsubsection{Social Media}
 % favouriting, tweeting, blog posts
 Often the majority of posts in an online forum are contributed by a minority of active participants, also referred to as the "power law distribution of participation" \cite{lampe2010motivations}. 
 
-\subsubsection{Outreach}
-% wording, how when to spam participants to get them to come back
-
 \section{Discussion}
 
 \subsection{Common Myths of Citizen Science}
 \subsection{$D$ Myths of Designing for Citizen-Science}
-\subsection{Myth $X$: Putting new users through a ``tutorial'' is a good idea}
-\subsection{Myth $Y$: Gameification keeps people motivated}
+\subsection{Myth $X$: Putting new users through a `tutorial is a good idea}
+\subsection{Myth $Y$: Citizen science projects have to be `gameified'}
 %% to gameify or not?
 McGonigal identified four defining elements of a game: a goal, rules, feedback system and voluntary participation. Other features such as leader boards, badges, the `winning' sensation are all used to reinforce these core concepts but do not create a game environment in their own right \cite{mcgonigal2011reality}. To further this gameplay is a state which encourages an optimistic outlook on personal capabilities, partnered with `invigorating rush of activity' \cite{mcgonigal2011reality}. These concepts would support a science citizen, creating a gameplay state to highly motivate and encourage them to undertake difficult challenges. 
 \subsection{Myth $Z$: Participants become domain experts}
-\subsection{Myth $Z$: Beautiful pictures are necessary}
+\subsection{Myth $Z$: Images don't have to be beautiful and graphs don't have to be scary)}
+\subsection{Myth $Z$: If You Build It, They Will Come}
+
+It is a common misconception that websites are busy by default. It should go without saying that publicity and attention are required for people to find an online citizen science project. Networks and communities exist online to allow people to discover and share online projects. The Zooniverse was one of the first organisations in this field and has grown a substantial network of people around it (\~860,000 at time of writing).
+
+However above simple awareness, any creator of a citizen science project should be awrae of the approximate effort required. Most Zooniverse sites enlist the help of tens of thousands online volunteers. Thus when projects are designed, consideration should be given to the scale of the endeavour being attempted. Taking into account a reasonable expectation of wbe traffic and the effort any person may put is is difficult (how long is a piece of string?) but improtant for establishing a project with a realsitic end goal within the required time. Simply producing a citizen science website does not guarantee popularlity -- or more importantly scientific completion of the indended task.
+
 \subsection{Myth $Z$: Moderator involvement encourages discussion}
 Studies conducted in the educational sector have discovered that contrary to popular belief, instructors (i.e. experts) who contribute often to discussions actually decreased student posts \cite{zydney2012creating}. However, Mazzlini and Maddison propose that this reduction could be a result of more efficient discussion and understanding \cite{mazzolini2007jump}. 
 
