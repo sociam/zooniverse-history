@@ -97,7 +97,7 @@ However, designing successful citizen science systems that can be mutually benef
 % to something that makes sense - we sat as a group with key team mebers and identified
 % themes
 
-In this paper, we contribute a detailed case-study of a unique citizen-science platform which expanded from a single domain experiment to a ``factory for citizen science'', an authority for generating successful web applications for scientists across domains.  Zooniverse also represents the first system to in which volunteer contributions directly resulted in the publication of scientific findings in academic journals, and as of September 2013, has contributed findings to at least $P$ published scientific papers.  The analysis presented here is the result of a retrospective reflective thematic analysis towards identifying key insights and consequences of design decisions gained through the trial-and-error process of generating apps for various domains and data-sets since Galaxy Zoo, the first Zooniverse application.  This iterative process allowed the team to explore design variations at mutiple levels, from the interface/intraction flow, to the design of social elements (discussion forums), to external considerations such as ways to best launch and sustain prolonged engagement through external communications.
+In this paper, we contribute a detailed case-study of a unique citizen-science platform which expanded from a single domain experiment to a ``factory for citizen science'', an authority for generating successful web applications for scientists across domains.  Zooniverse also represents the first system in which volunteer contributions directly resulted in the publication of scientific findings in academic journals, and as of September 2013, has contributed findings to at least $P$ published scientific papers.  The analysis presented here is the result of a retrospective reflective thematic analysis towards identifying key insights and consequences of design decisions gained through the trial-and-error process of generating apps for various domains and data-sets since Galaxy Zoo, the first Zooniverse application.  This iterative process allowed the team to explore design variations at mutiple levels, from the interface/intraction flow, to the design of social elements (discussion forums), to external considerations such as ways to best launch and sustain prolonged engagement through external communications.
 
 % maybe a tad redundant:
 The goal of the this paper is to, first, document the informal knowledge gathered by the Zoonvierse team pertaining to how to design successful citizen science projects, based on their experience of launching 24 projects since the platform's genesis.  These insights are then discussed in the greater context of human computation, to derive design recommendations and discuss factors that may be responsible for the observations made. We begin with a short history of the project in order to provide readers a context for the following discussion, followed by a grounded dimensional design analysis of particular aspects of Zooniverse's deployment.  Finally, we discuss Zooniverse's team's perspective of the greatest difficulties for building more effective citizen science: $X$, $Y$ and $Z$, and ways that HCI research may be able to help.
@@ -299,6 +299,20 @@ Moderator posts and they would think
 %% In a study investigating the effect of instructors on forum participation, Mazzolini and Maddison found that instructors who posted frequently on a forum on average produced shorter discussion threads \cite{mazzolini2003sage}. In the Zooniverse environment the participation of `moderators' and `scientists' could be hindering the discussion flow between general science citizens. Furthermore there was a negative correlation between instructor initiated conversations and participation, especially in the advanced units\cite{mazzolini2003sage}. 
 
 %% @Neal does this support your findings so far?
+%% Conversations started by moderators tend to be ignored
+%% except in the case of particularly 'controversial' posts,
+%% such as threads about the I don't know button. However,
+%% such threads tend to be FAQ-style single post Q&A threads,
+%% and so it's possible this is why. In fact 'welcome' style
+%% threads are almost always started by moderators and these
+%% threads are among the most popular threads across all projects.
+%% However, certainly where moderators attempt to engage in
+%% pre-existing discussion threads, their comments are ignored and
+%% their questions go unanswered, except usually, by other
+%% moderators, although this may partially be a result of the
+%% subject matter or the time which has elapsed (necromancy). 
+
+%% In terms of frequent posters, that's something I'll look into
 
 %% Success stories: examples of super-moderators who externally test
 %% contributions and distill them for the scientists
@@ -375,7 +389,9 @@ A `Call to Action' appears to work increbily well. Sites with clear, succinct fr
 
 Projects with innately simple tasks (e.g. Ice Hunters, Spacewarps) show much higher classifications-per-user numbers than projects with more complex tasks (e.g. Milky Way Project, Cyclone Center). The complexity of a task does not appear to be correalted with how long users spend on the site in any session. Moon Zoo and the Milky Way Project have similar interfaces but very different dwell times. Conversley, Ice Hunters and Old Weather had similar dwell times for many months, despite one being far more complex than the other.
 
-The issue of projects with intrinsically dull or repetetive datasets has created technological change in the Zooniverse.
+Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
+
+The combination of \emph{MongoDB} and \emph{Redis} meant not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the numbe rof required classifers over time. Significantly it hasd allowed for subjects to be retired from classification if they contain nothing ot note. This has hugely improved the issue of projects with intrinsically less-appealing or repetetive datasets.  
 
 % Feedback - how many have I done? (how many eggs vs how many Xs)
 % Boring project problem - Subject selection - a constraint that led to development and technological change
