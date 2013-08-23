@@ -16,6 +16,7 @@
 \usepackage{url}      % llt: nicely formatted URLs
 \usepackage{algorithm,algorithmic}
 
+
 % llt: Define a global style for URLs, rather that the default one
 \makeatletter
 \def\url@leostyle{%
@@ -356,26 +357,25 @@ Then we moved on to the next logical step, which is guiding a user through a cla
 
 % when we turned on compulsory tutorial -- bounce rate went up
 
-\subsection{Interface Design}
-
+%% \subsection{Interface Design}
 % Does good design improve participation?  Much evidence has suggested that \emph{good design builds trust}, by improving people's subjective appraisal of web sites and applications.  
 
 %% Examples of surface level/aesthetic re-design >  (and perceived effects)
-Moon Zoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? % look to see if there was any effect? >> not as far as we can see
+%% Moon Zoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? % look to see if there was any effect? >> not as far as we can see
 
 %% Examples of thematic redesign encompassing addition of narrative context (and percevied effect) > 
-How to measure engagement
-  how much time spent on the site
-  people stick over a minute, (2-3 mins, high is 20)
-  (moderators of old weather)?
+%% How to measure engagement
+%%   how much time spent on the site
+%%   people stick over a minute, (2-3 mins, high is 20)
+%%   (moderators of old weather)?
   % TODO: can we say anything about the effect of the narrative in Old Weather? 
   % evidence in the discussion forums ? 
   %   > i wonder why the handwriting has changed?
   %   > most keen to help each other out -- 
 
 %% Examples of interface affordance design (and perceived effect)
-GZ / GZ2 - so it was turned into a deicsion tree
-  what kind of galaxy, 6 buttons -> decision tree
+%% GZ / GZ2 - so it was turned into a deicsion tree
+%%   what kind of galaxy, 6 buttons -> decision tree
 
 % much better data, and it decreased participation
 
@@ -421,9 +421,11 @@ After the launch of every project the whole Zooniverse community is emailed an a
 
 \subsection{Sustaining Engagement}
 
-% Consistent with visitation patterns to most web sites \cite{}, it was observed that visitors to the Zooniverse apps were increasingly likely to leave the site every passing moment on the site, than to stay.  Therefore, engaging users to tasks immediately maximized the amount of potential participation overall.  Even more the likelihood of a later return to the site was (Over half of the classifications were contributed by users who never returned. This of course, has significant implications 
-From the very first moment that a user arrives on a website, they are more likely to leave than to stay. The faster they can be engaged with participation in the main (citizen science) task, the more people will have participated over all.
-% TODO this has a significant implication for the training/tutorial phase for getting new users oriented with their task, as users are likely to leave
+Consistent with visitation patterns to most web sites \cite{TODO}, it was observed that visitors to the Zooniverse apps were increasingly likely to leave the site every passing minute on the site, than to stay.  Moreover, since after a user left, the probability that they would ever return was estimated to be at most an odds ratio of $10-to-1$, maximizing the amount of participation meant engaging users with tasks as soon as they first landed.  This had profound implications on the design of the tutorial, as we describe later, getting users acquainted to the system and their task.  The result of optimising this process, however, did allow a significant amount of contributions to be gathered by short-stayers; ultimately, over half of Zoonvierse's classifications were performed by users who only visited the site \emph{once}.
+
+%% immediately was a priority for maximizing the amount of potential participation overall.  Even more the likelihood of a later return to the site was (Over half of the classifications were contributed by users who never returned. This of course, has significant implications 
+%% From the very first moment that a user arrives on a website, they are more likely to leave than to stay. The faster they can be engaged with participation in the main (citizen science) task, the more people will have participated over all.
+%% % TODO this has a significant implication for the training/tutorial phase for getting new users oriented with their task, as users are likely to leave
 
 A number of factors also seemed to influence the remaining engagement.  First, having a `Call to Action' appears to improve retention; sites with clear, succinct front-page descritpions ot a project's intention have lower bounce rates overall (the fraction of people who leave and don't classify). This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation. % TODO: Can we show a visual example of a call to action versus not?
 
@@ -435,13 +437,6 @@ A third factor pertains to task difficulty. Projects with innately simple to per
 
 % Having a clear call-to-action / message
 % Feedback: progress TODO: (move up here from down below)
-% TODO: Move to -------------> out of this section
-\subsection{Deployment Constraints on Design}
-
-\subsubsection{Achieving Low-Latency Interaction}
-Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
-
-The combination of \emph{MongoDB} and \emph{Redis} means not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the number of required classifiers over time. Significantly it has allowed for subjects to be retired from classification if they contain nothing of note. This has hugely improved the issue of projects with intrinsically less-appealing or repetitive datasets.  
 
 %%   % TODO: can we say anything about the effect of the narrative in Old Weather? 
 %%   % evidence in the discussion forums ? 
@@ -484,6 +479,16 @@ More recent Zooniverse projects have been able to include synthetic or expert da
 \subsubsection{Social Media}
 % favouriting, tweeting, blog posts
 Often the majority of posts in an online forum are contributed by a minority of active participants, also referred to as the "power law distribution of participation" \cite{lampe2010motivations}. 
+
+% TODO: Move to -------------> out of this section
+\subsection{Deployment Constraints on Design}
+
+\subsubsection{Low-Latency Interaction at Scale}
+Creating a responsive online environment requires more sophicasted back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
+
+The combination of \emph{MongoDB} and \emph{Redis} means not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the number of required classifiers over time. Significantly it has allowed for subjects to be retired from classification if they contain nothing of note. This has hugely improved the issue of projects with intrinsically less-appealing or repetitive datasets.  
+
+% \subsubsection{Other deployment considerations..}
 
 \section{Discussion}
 
@@ -556,7 +561,6 @@ Schrire discovered two distinctive interaction patterns: instructor-centered, me
 % almost always needs a discussion space
 \subsection{Engagement: Interestingness x Difficulty x Context}
 
-
 \subsection{Limitations and Ongoing Work}
 
 %% FUTURE WORK
@@ -567,7 +571,7 @@ Schrire discovered two distinctive interaction patterns: instructor-centered, me
 %    SO, catch scientists them when they go to the site> CHECK OUT THIS DISCUSSION THREAD
 
 % A-B testing alternatives - the cost of deriving two designs and 
-% formally A-B testing them is prohibitive 
+% formally A-B testing them can be prohibitively expensive
 
 \section{Related work}
 
@@ -645,12 +649,11 @@ Acknowledgments omitted for blind review.
 % \emph{I was thinking put key design observations here relating to how to cross-domain
 % citizen science}
 
-
-
-
 % If you want to use smaller typesetting for the reference list,
 % uncomment the following line:
 % \small
+
+
 \bibliographystyle{acm-sigchi}
 \bibliography{zooniverse-history}
 \end{document}
@@ -679,3 +682,33 @@ Acknowledgments omitted for blind review.
 %%  LocalWords:  Powerpoint CB's CBs each's bulleted parseable OTs
 %%  LocalWords:  sub-schemas pre Dourish XLSX csv PPTX PPT ICS CalDAV
 %%  LocalWords:  RSS VCF XSLT XLST CSS Dojo PNG
+
+
+%% notes from Oxford, 22 August
+%% SOCIAL MEDIA  > 
+%% troubleshooting >> social media is used for troubleshooting
+%% source of traffic >> we get a significant amount of traffic from social media
+%%  whale.fm gets a lot of traffic from social media
+
+%% INTERFACE >
+%% Rising percent of tablet users > it needs to work on an ipad
+%%  - ones that promote on the telly
+
+%% Discussion forums >
+%%    Why they were introduced
+%%    How it evolved and emerged
+%%       From "What's this?" to so much more!
+%%       Increase engagement by letting people share pretty galaxies and discuss
+%%        (basic statistics of how many people have done this)    Key players / decisions - Moderators
+%%       Independently tested hypothesis and moderators emerged as key mediators between participants and scientists
+%%     Peas and verpwork 
+%% Questions for Chris::
+%%    _Key affordances of the forums w.r.t. how they facilitated these discussions_
+%%    _Missing affordances - things that would have helped_    _Role of project managers and scientists_
+%%     What did they do to make things happen
+%% Two path to science
+%%   -> show -> classifications
+%%           -> interesting things to talk about
+
+
+  
