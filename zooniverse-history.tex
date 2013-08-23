@@ -108,9 +108,13 @@ However, designing successful citizen science systems that can be mutually benef
 
 In this paper, we contribute a detailed case-study of a unique citizen-science platform which expanded from a single domain experiment to a ``factory for citizen science'', an authority for generating successful web applications for scientists across domains.  The iterative process of creating apps for particular science projects, culimating in 27 projects total by September 2013, allowed the team to explore design variations at mutiple levels, from the interface/intraction flow, to the design of social elements (discussion forums), to external considerations such as ways to best launch and sustain prolonged engagement through external communications. Zooniverse also represents the first system in which volunteer contributions directly resulted in the publication of scientific findings in academic journals, contributing findings to at least $P$ published scientific papers.  
 
-The analysis presented here is the result of a retrospective reflective thematic analysis towards identifying key insights and consequences of design decisions gained through the trial-and-error process of generating apps for various domains and data-sets since Galaxy Zoo, the first Zooniverse application.  The goal of the this analysis was to document the informal knowledge gathered by the Zoonvierse team pertaining to how to design successful citizen science projects.  These insights were then used to derive design recommendations and discuss factors that may be responsible for the observations made. 
+In this paper, we present a retrospective reflective thematic analysis conducted to identify key insights and consequences of design decisions gained through the trial-and-error process of generating apps for various domains and data-sets since Galaxy Zoo, the first Zooniverse application.  The goal of the this analysis was to document the informal knowledge gathered by the Zoonvierse team pertaining to how to design successful citizen science projects.  These insights were then used to derive design recommendations and discuss factors that may be responsible for the observations made. 
 
 We begin with a short history of the project in order to provide readers a context for the following discussion, followed by a grounded dimensional design analysis of particular aspects of Zooniverse's deployment.  Finally, we discuss Zooniverse's team's perspective of the greatest difficulties for building more effective citizen science: $X$, $Y$ and $Z$, and ways that HCI research may be able to help.
+
+% maybe a tad redundant:
+%% The goal of the this paper is to, first, document the informal knowledge gathered by the Zoonvierse team pertaining to how to design successful citizen science projects, based on their experience of launching 27 projects since the platform's genesis.  These insights are then discussed in the greater context of human computation, to derive design recommendations and discuss factors that may be responsible for the observations made. We begin with a short history of the project in order to provide readers a context for the following discussion, followed by a grounded dimensional design analysis of particular aspects of Zooniverse's deployment.  Finally, we discuss Zooniverse's team's perspective of the greatest difficulties for building more effective citizen science: $X$, $Y$ and $Z$, and ways that HCI research may be able to help.
+
 
 \section{Background: A Brief History of the Zooniverse}
 
@@ -118,37 +122,14 @@ We begin with a short history of the project in order to provide readers a conte
 
 In contrast to crowdsourcing and citizen science projects that focus on participant-driven data collection (e.g., \cite{okolloh2009ushahidi}, \cite{zook2010volunteered}), the focus of Zooniverse is exclusively citizen \emph{data analysis}, that is, having participants help with the classification, labeling and extraction of information from large, already extant datasets. As documented previously by Fortson et al \cite{fortson2011galaxy}, the first Zooniverse project, Galaxy Zoo, was designed to engage volunteers in the morphological classification of images of galaxies, and launched in July 2007\cite{galaxyzoo-launch}.  The first scientific papers that resulted from findings from Galaxy Zoo's over 100,000 citizen contributors were published in 2008, on spin statistics of spiral galaxies\cite{land2008galaxy} and a separate paper on the morphological characteristics of galaxies\cite{lintott2008galaxy}.
 
-After Galaxy Zoo, it became clear to the team that more projects would follow.  The first such was Solar Stormwatch, a project effectively built for the Royal Observatory of Greenwich by Zooniverse.  The first non-astronomy project was debuted in October 2010.
+After Galaxy Zoo, it became clear to the team that more projects would follow.  The first such project was Solar Stormwatch, effectively built for the Royal Observatory of Greenwich by Zooniverse.  The first non-astronomy project was debuted in October 2010.
 
 \emph{AND THEN STUFF HAPPENED!} 
 
 %% OUTLINE from Rob >> #TODO turn into a timeline (eMax)
 %% After Galaxy Zoo it was clear that more projects were to follow.
 %% In develping GZ2 Arfon Smith created `Juggernaut' a Ruby on Rails application, with a MySQL back end, designed as a generalised web application for citizen science projects like Galaxy Zoo.
-%% %% Neale this is when the ideas of annotations, classifications etc came into being
-%% Early 2010 saw Solar Stormwatch happen, a project effectively built for someone else (Royal Observatory Greenwich) by the Zooniverse. It used Juggernaut and is still running.
-%% <<When does the CSA happen!?>>
-%% October 2010 sees the deployment of Old Weather - the first non-astronomy project, first transcription project and first to incorporate any game mechanics.
-%% Around the same time we began to take social media more seriously and created a blog network, Twitter/Facebook accounts and even held special events such as the (now annual) Zooniverse Advent Calendar in Dec 2010.
-%% The Milky Way Project and Planet Hunters launche din Dec 2010 both using public astronomy datasets (like Galaxy Zoo).
-%% In July 2011 Anicent Lives launches - another non-astronomy, transcription project.
-%% In August 2011 we created `Talk' as a way to begin to better harness the power of our discussion fora. The PHP fora we used beforehand were beocming difficult to support and hard to mine for data. We felt that there was a better user experience to be created and a better way for citizen scienceto happen, base don the experienc eon the Peas Corp and the stor yof the Voorwerp.
-%% In August 2011 Ice Hunters went live. Built by a separate development team using our system.
-%% In Oct 2011 NEEMO was our first purely experimental project - where we weren't even sure of the scientific outcome. We were very clear about this with the users and even housed it in a new `labs' area of the Zooniverse site to be clear that it was an experiment.
-%% Whale FM (Nov 29 2011) was our first project to use sound. It was clear early on that it wasn't as popular as the others.
-%% In January 2012, BBC Stargazing Live featured Planet Hunters and we received a million classiciations in just two and a bit days. Planet Hunters was actually more popular in the days following the announcement of our discovering a planet during that time, that it had been during the BBC show.
-%% In early 2012 we came up with the idea of switching to MongoDB and HTML5 web-apps served from Amazon S3 buckets. The new system: `Ouroboros' would replace Juggernaut and act as a one app serving all our projects. The Juggernaut codebased had become fragmented and each project required its own server and DB. It was getting expensive! IN Sep 2012 we ran `Citizen Science September' and launch four projects in four weeks. These were all base don the new system and it worked out very well.
-%% BBC Stargazing returned and in Jan 2013 we launched Planet Four, built specially for the show.
-%% AT writing, the latest project was Worm Watch Labs, the 27th project launched in June 2013.
-
-Table \ref{project-summary} lists all of the Zooniverse projects,
-launch dates, sizes of data sets and classifications as of September
-2013.  Figure $Y$, likewise, illustrates the growth of the project
-from June 2007 until September 2013.
-
-The complete list of scientific papers that have resulted from
-Zooniverse are compiled on the Zooniverse web site\footnote{Zooniverse
-  Publications - \url{https://www.zooniverse.org/publications}}.
+%% %% Neal this is when the ideas of annotations, classifications etc came into being
 
 % Terminology of Zooniverse 
 % See blog post by arfon > 
@@ -180,6 +161,30 @@ Zooniverse are compiled on the Zooniverse web site\footnote{Zooniverse
 % and classifications are associated. In the Ouroboros API used by 
 % Zooniverse, project entities store information about groups and the
 % status of the project, as well as other administrator functions.
+
+%% Early 2010 saw Solar Stormwatch happen, a project effectively built for someone else (Royal Observatory Greenwich) by the Zooniverse. It used Juggernaut and is still running.
+%% <<When does the CSA happen!?>>
+%% October 2010 sees the deployment of Old Weather - the first non-astronomy project, first transcription project and first to incorporate any game mechanics.
+%% Around the same time we began to take social media more seriously and created a blog network, Twitter/Facebook accounts and even held special events such as the (now annual) Zooniverse Advent Calendar in Dec 2010.
+%% The Milky Way Project and Planet Hunters launche din Dec 2010 both using public astronomy datasets (like Galaxy Zoo).
+%% In July 2011 Anicent Lives launches - another non-astronomy, transcription project.
+%% In August 2011 we created `Talk' as a way to begin to better harness the power of our discussion fora. The PHP fora we used beforehand were beocming difficult to support and hard to mine for data. We felt that there was a better user experience to be created and a better way for citizen scienceto happen, base don the experienc eon the Peas Corp and the stor yof the Voorwerp.
+%% In August 2011 Ice Hunters went live. Built by a separate development team using our system.
+%% In Oct 2011 NEEMO was our first purely experimental project - where we weren't even sure of the scientific outcome. We were very clear about this with the users and even housed it in a new `labs' area of the Zooniverse site to be clear that it was an experiment.
+%% Whale FM (Nov 29 2011) was our first project to use sound. It was clear early on that it wasn't as popular as the others.
+%% In January 2012, BBC Stargazing Live featured Planet Hunters and we received a million classiciations in just two and a bit days. Planet Hunters was actually more popular in the days following the announcement of our discovering a planet during that time, that it had been during the BBC show.
+%% In early 2012 we came up with the idea of switching to MongoDB and HTML5 web-apps served from Amazon S3 buckets. The new system: `Ouroboros' would replace Juggernaut and act as a one app serving all our projects. The Juggernaut codebased had become fragmented and each project required its own server and DB. It was getting expensive! IN Sep 2012 we ran `Citizen Science September' and launch four projects in four weeks. These were all base don the new system and it worked out very well.
+%% BBC Stargazing returned and in Jan 2013 we launched Planet Four, built specially for the show.
+%% AT writing, the latest project was Worm Watch Labs, the 27th project launched in June 2013.
+
+Table \ref{project-summary} lists all of the Zooniverse projects,
+launch dates, sizes of data sets and classifications as of September
+2013.  Figure $Y$, likewise, illustrates the growth of the project
+from June 2007 until September 2013.
+
+The complete list of scientific papers that have resulted from
+Zooniverse are compiled on the Zooniverse web site\footnote{Zooniverse
+  Publications - \url{https://www.zooniverse.org/publications}}.
 
 
 \begin{table*}
@@ -253,7 +258,14 @@ Worm Watch Lab & Active & wormwatchlab.org & 30 Jun 2013 & Biology & 3,251 & 74,
 
 Despite the development of projects in very different domains of academic research, and which involve disparate user interactions, the core requirements for a successful citizen science project remain stable. A `main' interface allows a \emph{user} to complete a \emph{task} when presented with a \emph{subject}. The task is typically constrained by the tools provided (e.g. answer questions from a decision tree, mark craters on an image) and when completed typically results in the presentation of the next subject to be classified. In Zooniverse projects to date, participants perform tasks individually, and are typically not given control over choice of what subjects to work on. This latter choice makes deliberate manipulation of the data difficult and also ensures that project priorities are respected (i.e. it's not just the beautiful/interesting/easy subjects that are worked on). Secondly, some tutorial elements - either as a stand-alone tutorial, as an interactive within the interface or as surrounding context - are required to acquaint users with their tasks. An additional environment for discussion is typically, but not always, provided allowing for more free-form interaction between users and other participants such as scientists, developers and for which work goes beyond the initial task. Extra tools for manipulated subjects or for exploring contextual information may be provided in association with these discussion environments. 
 
+%% One of Arfon's blog posts ties in nicely with the above "despite the development..." as it explains that fundamentally 
+%% the team have tried to make it so that each project is the same 'deep down', differing only by goal and interface
+
 A community of participants is implicitly necessary for a citizen science project; crowdsourcing without a crowd is a perhaps unsolvable problem. However, levels of participation and involvement in the community will naturally vary; Zooniverse projects typically receive a substantial number of their classifications from users who will never return. A successful citizen science project will thus be designed to both enable these short-term participants to make useful contributions while still fostering longer-term engagement. This need also illustrates the requirement in most cases to assess the ability or accuracy of participants; many projects thus incorporate `tests', either explicitly or more commonly by including simulated or expert-classified subjects in the workflow presented to users. 
+
+%% The Hcomp2013 "Volunteers' engagement in volunteer thinking project" paper states that for the Milky Way project, 78% of all
+%% classifications are completed by regular users (i.e, those who return at least more than once) and for the Galaxy Zoo project
+%% this value increases to 80%, which conflicts heavily with the above statements.
 
 \subsection{Discussion forums}
 
@@ -402,7 +414,7 @@ In 2012 and 2013 there has been a rising fraction of users accessing Zoonivers s
 \subsection{Launching Projects}
 % Andromeda, Whale FM, Spacewarps and Snapshot Serengeti as case studies
 
-With more than 20 projects launched over just a few years, the Zooniverse platform is host to a series of natural experiments regarding the announcement and subsequent take-up of citizen science projects. There are a large number of variables affecting the potential uptake of any new site including but not limited to; method of announcement (e.g level of press coverage, size of exisiting community), `stickiness' of proposition (i.e. discovering an exoplanet is generally more exciting as a proposition than differentiating genetic subsamples of nematode worms); difficulty of task; technological requirements (e.g. Does the site work on desktops, tablets, smartphones); and many more.
+With more than 27 projects launched over just a few years, the Zooniverse platform is host to a series of natural experiments regarding the announcement and subsequent take-up of citizen science projects. There are a large number of variables affecting the potential uptake of any new site including but not limited to; method of announcement (e.g level of press coverage, size of exisiting community), `stickiness' of proposition (i.e. discovering an exoplanet is generally more exciting as a proposition than differentiating genetic subsamples of nematode worms); difficulty of task; technological requirements (e.g. Does the site work on desktops, tablets, smartphones); and many more.
 
 \begin{figure}
 \centering
@@ -507,8 +519,20 @@ However, there was evidence that the ways that people get better at using the in
 
 %% to gameify or not?
 McGonigal identified four defining elements of a game: a goal, rules, feedback system and voluntary participation. Other features such as leader boards, badges, the `winning' sensation are all used to reinforce these core concepts but do not create a game environment in their own right \cite{mcgonigal2011reality}. To further this gameplay is a state which encourages an optimistic outlook on personal capabilities, partnered with `invigorating rush of activity' \cite{mcgonigal2011reality}. These concepts would support a science citizen, creating a gameplay state to highly motivate and encourage them to undertake difficult challenges. 
+
+%% The team observed that it took a considerable amount of effort to gameify projects and no net gain occurred over simply
+%% stating "x is really important/beautiful/whatever and we want to study it/save it, please help." Also, it appears that 
+%% for a game to be 'fun' it required an activity which significantly slowed the classification rate, such as in the 'ash game'
+%% that Chris and Rob mentioned while in Oxford. Instead, they opted to use Obfuscated Gameification, where aspects of gameification
+%% were used, such as leaderboards and badges, to encourage participation, without having overt gameification. In addition, users
+%% contribute because of intrinsic motivations such as "I really want to help with science" and their views of what constitutes 
+%% science and what satisfies these intrinsic motivations conflict with gameified projects (? - mentioned by people here but not heard from the team)
+
 \subsection{Myth $Y$: I should include a 'Don't Know' Button}
-% Serengeti blog post
+% Serengeti blog post - "http://blog.snapshotserengeti.org/2012/12/14/we-need-an-i-dont-know-button/"
+% Needs of science/admin team vs desires of users - not having button far more advantageous for science team and can give tag
+% subjects even though subject may not be clear - e.g, evidently something small even though not sure what.
+% However, talk discussions show that this can lead to misuse of buttons - "nothing here" when there clearly is.
 \subsection{Myth $Z$: Participants become domain experts}
 \subsection{Myth $Z$: Beautiful pictures are necessary}
 \subsection{Myth $Z$: Non-pictorial data are harder to understand}
