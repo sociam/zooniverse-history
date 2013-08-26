@@ -91,6 +91,8 @@ breaklinks=true,
 
 \begin{abstract}
 
+(( TODO ))
+
 \end{abstract}
 
 \keywords{Citizen science, crowdsourcing, interface design}
@@ -143,7 +145,11 @@ We begin with a short history of the project in order to provide readers a conte
 
 In contrast to crowdsourcing and citizen science projects that focus on participant-driven data collection (e.g., \cite{okolloh2009ushahidi}, \cite{zook2010volunteered}), the focus of Zooniverse is exclusively citizen \emph{data analysis}, that is, having participants help with the classification, labeling and extraction of information from large, already extant datasets. As documented previously by Fortson et al \cite{fortson2011galaxy}, the first Zooniverse project, \emph{Galaxy Zoo}\footnote{Galaxy Zoo - \url{www.galaxyzoo.com}}, engaged volunteers in the morphological classification of images of galaxies, and launched in July 2007 \cite{galaxyzoo-launch}.  The first scientific papers that resulted from findings from Galaxy Zoo's over 100,000 citizen contributors were published in 2008, on spin statistics of spiral galaxies\cite{land2008galaxy} and the morphological characteristics of galaxies\cite{lintott2008galaxy}.
 
-The success of Galaxy Zoo 1 generated significant interest, and it became clear that there would be more projects to follow.  The first such project was \emph{Solar Stormwatch}\footnote{Solar Stormwatch - \url{http://www.solarstormwatch.com/}}, effectively built for the Royal Observatory of Greenwich by Zooniverse.  The first non-astronomy project, \emph{Old Weather}\footnote{Old Weather - \url{www.oldweather.org}}, launched in October 2010 and applied volunteers to transcribe historical, hand-written weather measurements from official logs of trading ships, primarily between the period of 1780-1830.  As of September 2013, the Zooniverse family of projects has benefitted from the participation of $XXX,XXX$ volunteers who have collectively contributed over $NNN,NNN,NNN$ classifications to the system.  Table \ref{project-summary} lists all of the Zooniverse projects, launch dates, sizes of data sets and classifications as of September 2013.  Figure $Y$, likewise, illustrates the growth of the project from June 2007 until September 2013. The complete list of scientific papers that have resulted from Zooniverse are compiled on the Zooniverse Blog\footnote{Zooniverse Publications - \url{https://www.zooniverse.org/publications}}.
+The success of Galaxy Zoo 1 generated significant interest, and it became clear that there would be more projects to follow.  The first such project was \emph{Solar Stormwatch}\footnote{Solar Stormwatch - \url{http://www.solarstormwatch.com/}}, effectively built for the Royal Observatory of Greenwich by Zooniverse.  The first non-astronomy project, \emph{Old Weather}\footnote{Old Weather - \url{www.oldweather.org}}, launched in October 2010 and applied volunteers to transcribe historical, hand-written weather measurements from official logs of merchant trading ships from the period of 1780-1830.  As of September 2013, the Zooniverse family of projects has benefitted from the participation of $XXX,XXX$ volunteers who have collectively contributed over $NNN,NNN,NNN$ classifications to the system.  
+
+Table \ref{project-summary} lists all of the Zooniverse projects by launch date, along with their current status, their web site locations, sizes of data sets, and task type, as of September 2013.  \emph{Classification} projects ask users to identify the presence, types, and potentially number of things visibile in each subject.  An example of such a task is identifying and counting the number of animals visible in a particular automatically-taken photo, taken by motion-detecting camera in \emph{Snapshot Serengeti}. \emph{Marking} tasks involve the additional step of indicating where in the image the particular object is found, for example, identifying the location of organisms in the undersea images of \emph{Seafloor Explorer}.  Finally, \emph{transcription} tasks involve reading, often deciphering difficult-to-read, text and characters typically from old handwritten texts, such as the ship logs in \emph{Old Weather} or scientists' field notebooks in \emph{Notes from Nature}.    
+
+Figure $Y$, likewise, illustrates the growth of the project from June 2007 until September 2013. The complete list of scientific papers that have resulted from Zooniverse are compiled on the Zooniverse Blog\footnote{Zooniverse Publications - \url{https://www.zooniverse.org/publications}}.
 
 \subsection{Zooniverse Terminology and Overview}
 In the remainder of this paper, we adopt the Zooniverse team's terminology for describing the system and its components, which we briefly summarise here. In the context of Zooniverse, \emph{projects} are proposed to the core Zooniverse team by researchers who become the project's \emph{science team}.  The science team are ultimately responsible for the project once launched.  Each project represents a single, specific line of inquiry and data set, and is launched as a separate web site, with a dedicated discussion forums,  and associated social media channels, including a blog, Twitter account and Facebook page.  Volunteer participants, referred to as \emph{users}, who sign up to any Zooniverse project can contribute to any of the others through links at the top of each Zooniverse project site.  
@@ -212,8 +218,7 @@ Users who are the top contributors may be appointed \emph{moderators}, who are g
 
 \begin{table*}
 \begin{center}
-\caption{Summary of Zooniverse projects past and present.
-Notes: The 1.68 million assets in the various Galaxy Zoo projects are not unique, since galaxies in GZ1 were used in subsequent projects.}
+\small
 \begin{tabular}{lcllclll}
 \hline
 Project & Status & URL & Launch & Category & Logged-In & Assets & Interface \\
@@ -253,6 +258,8 @@ Space Warps & Active & spacewarps.org & 08 May 2013 & Space & 9,544 & 345,240 & 
 Worm Watch Lab & Active & wormwatchlab.org & 30 Jun 2013 & Biology & 3,251 & 74,016 & Classification \\
 \hline
 \end{tabular}
+\normalsize
+\caption{Summary of Zooniverse projects past and present, including each projects status as of September 2013.  The 1.68 million assets in the various Galaxy Zoo projects are not unique, since galaxies in GZ1 were used in subsequent projects.}
 \end{center}
 \label{project-summary}
 \end{table*}
