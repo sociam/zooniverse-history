@@ -295,9 +295,11 @@ Users who are the top contributors may be appointed \emph{moderators}, who are g
 \item \emph{Were there any surprises, or unexpected results?}
 \item \emph{When you design and launch a new project now, what do you do differently than you would done at the start?}
 \end{enumerate}
-\caption{\emph{Questions for triangulation} - The interview process started with (and iteratively returned to) these four main questions as probes, to yield the main themes for analysis.}
+\vspace{10pt}
 \label{tbl:questions}
+\caption{\emph{Questions for triangulation} - The interview process started with (and iteratively returned to) these four main questions as probes, to yield the main themes for analysis.}
 \end{center}
+\vspace{-10pt}
 \end{figure}
 
 % triangulation approach?
@@ -341,7 +343,9 @@ A community of participants is implicitly necessary for a citizen science projec
 %% classifications are completed by regular users (i.e, those who return at least more than once) and for the Galaxy Zoo project
 %% this value increases to 80%, which conflicts heavily with the above statements.
 
-\subsection{term}
+\subsection{Task and Tutorial Design}
+
+\subsection{Discussion Forums}
 
 \begin{figure}
 \centering
@@ -362,7 +366,7 @@ Unexpectedly, however, the forum played another important role, and became a vit
 %% ask Chris about this
 Structured collaboration also proved effective. Galaxy Zoo science team member Bill Keel from the University of Alabama was able to spend time on the forum, and asked for help with searches for objects such as galaxies which appear to overlap \cite{overlap} (distant galaxies used to illuminate foreground ones can be used to probe the dust content of systems, a matter of some importance to astronomers). This work was also successful, but required Keel to spend substantial time as part of the forum community, something that other science team members were unwilling or unable to do. (This was perceived as not the only problem with the Forums and led to the design of the Talk forums, which anchored discussions around subjects, and reduced the need for a person, a role fulfilled Bill Keel to coordinate discussions about the same subjects or topics. and to make those discussions visible to both the science team and the participants.) Furthermore, by 2009 the forum had become less popular; the percentage of Galaxy Zoo users posting on what was a standard \emph{Simple Machines forum}\footnote{} was very low (less than two percent) and with more than 500,000 posts in more than 10,000 topics it had become difficult to navigate. While it still served the need of a core constituency, it was not engaging the majority of Galaxy Zoo classifiers in science. 
 
-\subsection{Redesigning Discussions: \emph{Talk}}
+\subsubsection{Redesigning Discussions: \emph{Talk}}
 % TODO: Chris - not sure what you mean here: 
 The low participation rates were mirrored in other Zooniverse projects such as Moon Zoo and Old Weather, although the latter in particular provided a core community with a space to discuss the historical aspects of the project in particular.
 
@@ -372,6 +376,8 @@ Starting from the launch of Planet Hunters in 2010, Zooniverse projects have mad
 \subsubsection{Role of moderators}
 Participation in Talk is triggered in different ways for different projects. In Planet Hunters the question 'Would you like to discuss this?' is asked after each subject is inspected, increasing engagement with Talk at the cost of slowing down classification in the main interface. As much of the Planet Hunters science has come from Talk, this trade seems worth making. In fact, the main interface is serving two important functions - it is both providing classifications as designed, but it is also providing entry points to discussion. In particular, this second function produces science through the intervention of `superusers' who may not classify themselves but who are able to make use of and further analyze interesting discoveries. 
 
+% TODO quant analysis : measure the effect of talk prompts >> 
+% prompting people to use talk vs giving people the option to look at talk (among other things) vs ... 
 In the Milky Way Project, launched a few weeks later, Talk is offered as one as three options after work on a particular subject is completed ('Save', 'Save and Discuss' - which leads to Talk, and Cancel). We might predict that the Milky Way Project Talk will be less popular, and indeed it is (XXX DATA? XXX). However, another significant factor influencing the success across instances of Talk seems to be involvement of the science team in discussions, especially in the first few days of a project. Early engagement allows trust to build up between moderators, community and professional scientists which sustains a community in the long term. This is now a key consideration in project selection and timing of launch. 
 
 % The options are now called "confirm" "discuss" and "cancel" as the interface asks "are you sure" after "submit" is selected.
@@ -412,7 +418,8 @@ As a result of the peas project, users found and analysed various subjects in or
 %  Very first post is a pretty galaxy
 
 
-Why Twitter box?  To get around thread death: New users come along and say what is this? Threads would be killed if an experienced user comes along and says this is a Class X asteroid. Would have otherwise not input. Moderator posts and they would think. %TODO: to close this off, did this experiment work? On Planet Hunters this significantly increased the number of comments, and a substantial number of them have proven to be useful.
+Why Twitter box?  To get around thread death: New users come along and say what is this? Threads would be killed if an experienced user comes along and says this is a Class X asteroid. Would have otherwise not input. Moderator posts and they would think. % TODO: to close this off, did this experiment work? On Planet Hunters this significantly increased the number of comments, and a substantial number of them have proven to be useful.
+% TODO quant: a graph of continued discussions with introduction of "twitter box" ?
 
 
 %% Different prompts to talk.
@@ -475,8 +482,8 @@ The original Galaxy Zoo included only a few lines of tutorial, followed by a sim
 
 This solves the problem of teaching classifiers what is expected of them, but consistent learning takes place throughout a citizen scientists' career. \cite{Smith}, for example, show trajectories of classification accuracy for individual users, showing that while large changes most often come early in a user's encounter with a project dramatic changes in accuracy are possible throughout. Each classification provided by a user produces a (perhaps unknown) change in user behaviour through learning, information about the subject under classification and information about the user themselves. Projects such as Planet Hunters, the Andromeda Project and Space Warps include expert-classified or synthetic data which can be used to measure user performance. When presented with synthetic data feedback is given to the user on their performance - essential in preventing them getting excited about discovering simulated planets but which also forms as an ongoing tutorial. 
 
-Video tutorials don't work. People do them but then leave (SSW).
-Compulsory training results in a large bounce rate (Moon Zoo)
+Video tutorials don't work. People do them but then leave (Solar Storm Watch). %% TODO: Quant - can we show a graph of this?
+Compulsory training results in a large bounce rate (Moon Zoo) %% TODO: Quant - can we show a graph of this too?
 With Whale FM and Ancient Lives we used tutorials that were interactive and overlaid on the interface - seemed to work well.
 Then we moved on to the next logical step, which is guiding a user through a classification by annotating the interface as they go along. That's where we are now.
 
@@ -509,7 +516,8 @@ Then we moved on to the next logical step, which is guiding a user through a cla
 \subsection{Visual Design and Aesthetics}
 
 %% Examples of surface level/aesthetic re-design >  (and perceived effects)
-%% MoonZoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? % look to see if there was any effect? >> not as far as we can see
+%% MoonZoo : redesigned December 2011 - re-designed the web site around the interface, interface had a slight modifications, and perceived effect? 
+%% TODO quant: can we see any effect? look to see if there was any effect? >> not as far as we can see
 
 % Does good design improve participation?  Much evidence has suggested that \emph{good design builds trust}, by improving people's subjective appraisal of web sites and applications.  However, there was no visible effect on the measures used to assess per-participant engagement on the site before and after the re-design of MoonZoo
 
