@@ -505,7 +505,6 @@ Milky Way & FFFF & CCC & DDDD \\
 % Tasks, however that were not particularly interesting can still sustain engeagement if they are \emph{easy}
 
 \subsubsection{Tutorials: Harnessing One-Hit Wonders}
-
 A common challenge to many human-computation systems is in teaching new users  enough about the tasks being asked of them for them to be able to carry them out effectively.   One common approach to getting users familiarised with a task or set of tasks is to brief them with a \emph{tutorial} of some form, when introduced to a new class of tasks \cite{gutheim2012fantasktic}.  However, designing an effective tutorial requires addressing a multitude of design questions, such as whether the tutorial should be interactive, or simply explanatory text or video? How much background about the task should the tutorial go into?   How long and thorough should the tutorial be?
 
 In citizen science, these questions are particularly difficult to answer because of the specialised nature of many of the tasks.  Some of the classification tasks of GalaxyZoo, for example, involve identifying properties of intergalactic phenomena that most users may not have even heard of prior to participating.  Similarly, even more ``down to earth'' domains such as Snapshot Serengeti involve identifying animals among a huge variety of species, many peculiar to Serengeti habitat, such as the \emph{secretary bird} or \emph{aardwolf}. How are users to possibly know how to identify and classify creatures and phenomena they know nothing about?
@@ -522,7 +521,7 @@ The implications of this observation was the need to devise an interface which c
 
 The only problem with this approach was that there was no feedback to users about how well they were doing.  Since feedback is necessary for improving a skill, the team selectively introduced, at a pre-deteremined frequency ``gold standard''  tutorial tasks on several projects, including Planet Hunters, the Andromeda Project, and Space Warps, that looked just like normal tasks, but were created by hand.  If the user failed to achieve the correct classification on these gold standard tasks, guidance in the form of a small explanations of the correct answer(s) were provided.   
 
-The effect of the combination of these design decisions had a measureable impact on the amount of information that the Zooniverse project has managed to successfully elicit from users.  The team estimates that a net $$Y$$ percent of classifications made in the system were yielded from one-time users that never returned.  This number would have been greatly diminished if a mandatory tutorial process had been introduced at the beginning of the tasks.
+The effect of the combination of these design decisions had a measureable impact on the amount of information that the Zooniverse project has managed to successfully elicit from users.  The team estimates that a net $$Y$$ percent of classifications made in the system were yielded from one-time users that never returned.  This number would have been greatly diminished if the traditional approach of putting users through a tutorial process at the beginning of the tasks had been taken instead.
 
 % the strategy is to  letting users use help affordances to get more information about what to do or clarifications regarding terminology.  For example, on Planet Hunters, users are shown a real subject () immediately and asked questions about whether it has any \emph{transients}.
 
@@ -551,26 +550,31 @@ In particular, not having a \emph{Don't Know} button meant that individuals were
 
 The second meant that it forced users to slow down.  This is often  particularly valuable to the science team, as these particular \emph{hard cases} can yield clues that benefit most from human insight and problem-solving skills, and that allow systems to tackle subjects that are particularly difficult to automatically process - examples of which existed throughout the projects.  For example, subjects from the Snapshot Serengeti project were captured by motion-sensitive camera-traps triggered automatically.  Various situations, such as the camera being triggered simply by strong winds, animals brushing up close to the camera, or motion detected at night, meant that there were often images in which no animal was visible, only part of an animal was visible, or the subject was too close, out of focus, or mostly obscured. 
 
-However, even in challenging cases, valuable partial information could often be obtained by pooling the collective judgements of individuals.  For example, if there is significnant agreement that the animal visible in an image is large, the science team can use this knowledge as metadata to later retrieve the subject when doing a query for large mammals, such as wildebeests. Thus, even if the exact identify of the animals is unknown partial information can be useful to the process. 
-
-The other case is that not having a \emph{don't know} drives individuals to discuss and collectively disambiguated the identity of animals in difficult cases.  Examples of such collective sensemaking abound across the projects.  where experienced users 
-
- % the science team can be relatively certain that the animal in question is large and so not of interest when they are studying smaller animals. Alternatively, it may still be possible to identify what the animal is actually doing (eating, moving or interacting, for example) even if the identity of the animal is unknown. 
-
-%However, such classifications can still be of value to the science team. Since multiple users classify the same subject, similarities between the classifications can offer valuable clues to the identify of the animal in question. 
-
-For particularly difficult images, the absence of an \emph{I don't know} button is particularly advantageous. Since multiple users are able to classify the same image, the team can identify similarities in responses. The modal response, for example, may clearly identify animals in the subject, or allow a more confident classification to be easily made. Additionally, this prevents an absence of classifications for more difficult subjects, which in turn allows the team to reduce the proportion of difficult subjects which each user is shown; If the system requires a specific number of responses for each subject, then the more a user skips a subject, the more unique users that will see that subject.
+However, even in challenging cases, valuable partial information could often be obtained by pooling the collective judgements of individuals.  For example, if there is significnant agreement that the animal visible in an image is large, the science team can use this knowledge as metadata to later retrieve the subject when doing a query for large mammals, such as wildebeests. Thus, even if the exact identify of the animals is unknown partial information can be useful to the process.  % Figure X displays an example of collective disambiguation process for a subject with a partially obscured creature. As can be seen, X Y and Z..
 
 % Table here? May require slight rewrite of above text 
+
+The other case is that not having a \emph{don't know} button coupled with the existence of a ``discuss'' button channeled individuals to talk about and collaboratively disambiguate difficult cases.  Examples of such collective sensemaking abound across the projects, especially for classification tasks where users routinely trade insights on what they think a particular creature might be and why.  
+
+% the science team can be relatively certain that the animal in question is large and so not of interest when they are studying smaller animals. Alternatively, it may still be possible to identify what the animal is actually doing (eating, moving or interacting, for example) even if the identity of the animal is unknown. 
+%However, such classifications can still be of value to the science team. Since multiple users classify the same subject, similarities between the classifications can offer valuable clues to the identify of the animal in question. 
+
+% For particularly difficult images, the absence of an \emph{I don't know} button is particularly advantageous. Since multiple users are able to classify the same image, the team can identify similarities in responses. The modal response, for example, may clearly identify animals in the subject, or allow a more confident classification to be easily made. Additionally, this prevents an absence of classifications for more difficult subjects, which in turn allows the team to reduce the proportion of difficult subjects which each user is shown; If the system requires a specific number of responses for each subject, then the more a user skips a subject, the more unique users that will see that subject.
+
 % HELP NEAL
 
-\subsubsection{Narratives and Contextual Ties to Engagement}
+\subsubsection{Narratives and Contextual Enrichment}
 %% Old Weather stuff here
-The Old Weather project aims to transcribe ship log books to better understand how weather systems have changed over time. In order to do so, users are provided with subjects which are images of ship log book pages, from which they must extract information before adding it to the database. These log book pages contain various items in addition to the weather data, ranging from crew and cargo movements, to draft letters home from ship members. 
+
+
+
+The Old Weather transcription project described in the Background section served the purpose of having users transcribe old ship logs from early seafaring 
+
+books to better understand how weather systems have changed over time. In order to do so, users are provided with subjects which are images of ship log book pages, from which they must extract information before adding it to the database. These log book pages contain various items in addition to the weather data, ranging from crew and cargo movements, to draft letters home from ship members. 
 
 Initially, the team intended to use subjects which contained extracted weather data, simplifying the task while preventing users from seeing the additional items which were of no interest to the science team. However, it was decided to include this additional information in the hopes of making the project subjects more interesting to users and thereby increase engagement.
 
-The project interface only allows users to transcribe information pertaining to certain topics, such as date, location and weather observations. There is an additional "events" column to which users are encouraged to add "any information which interests them." 
+The project interface only allows users to transcribe information pertaining to certain topics, such as date, location and weather observations. There is an additional ``events'' column to which users are encouraged to add ``any information which interests them.''
 
 % Above "any information which interests them" quotation taken from Old Weather project FAQ page: http://www.oldweather.org/faq
 
