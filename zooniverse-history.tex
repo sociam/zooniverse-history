@@ -8,21 +8,6 @@
 %% 2. XXX,XXX volunteers, NNN,NNN,NNN classifications
 %% 3. ``Guide to social science papers'' - throw me a bone?
 %% 
-%% TODO for Southampton Team
-%% 
-%% 1. (for Neal): in intro, zoologists, archaeologists  etc what other
-%%     kinds of -ologists?  - Done - See relevant comment under paragraph
-%%     3 of introduction.
-%% 2. (for Ramine) - Introduction - ``grounded dimension analysis'' - i belive
-%% this is a term we made up. Can you re-write this 
-%% 3. (for Ramine) - Method - Can you help us get cracking on this
-%% 4. (
-
-%% serendipitous discovery
-%% talk description before 
-%% serendipitous discoveries
-%%  is it for people to feel good
-%%  
 
 % Use this command to override the default ACM copyright statement (e.g. for preprints). 
 % Consult the conference website for the camera-ready copyright statement.
@@ -348,28 +333,6 @@ In this section, we summarise the key themes pertaining to the design that emerg
 
 \subsection{Citizen-led Investigations and Serendipitous Discoveries}
 
-The most discussed theme was that of citizen-led discoveries, an area originally unanticipated by both the Zooniverse and core science teams.  The original intent of The Zooniverse, as with most citizen science teams, was essentially to leverage the power of the crowd to expedite progress on a pre-specified set of problems articulated by the science team.  In this model, illustrated by the `top path' of Figure \ref{fig:twopaths},  executing tasks were the primary method by which participation would result in scientific knowledge. 
-
-However, the addition of \emph{discussion facilities} to the Zooniverse opened up another pathway, which became apparent under a month after the Galaxy Zoo Forum first launched, when the citizen participant responsible for finding the ``Voorwerp'' posted her message that would ultimately mark the project's first citizen-initiated discovery.  This second, serendipitous ``path to science'', illustrated in the bottom path of Figure \ref{fig:twopaths}, meant that scientific questions that had not been anticipated might be identified and investigated by citizens themselves with various degrees of autonomy from the science teams.
-
-Here, we first briefly describe the most notable citizen-initiated investigations in order to highlight the ways that citizens contributed to each.  Central to each of these were Zooniverse's facilities for collaborative discussion, which provided both the conduit and  context for users to ask questions, generate hypotheses, and even validate each others' hypotheses.  Thus, we then focus on the design of the discussion forums, and how these were evolved by the team to support more effective citizen-led discovery. 
-
-\subsubsection{\emph{The Voorwerp}, \emph{Peas}, \emph{Convict Worms}, and \emph{Kepler 16b}: Four citizen-initiated discoveries of note}
-
-In table \ref{tbl:serendipity}
-
-% We then discuss the implications of these findings on the design of these forums, and highlight the factors that led to 
-
-% Central to the process of all of these discoveries were the discussion forums, originally principally the Galaxy Zoo Forum, and later \emph{Zooniverse Talk}, described later.  Although there was nothing unique about the set-up or organisation, when paired with the projects, these forums provided both the conduit and context for collaborative discovery, with sufficient flexibility to allow participants to both field each others' questions, and coordinate on more difficult cases, while also socialising and sharing subjects of interest and beauty.
-
-% The first Zooniverse Project, \emph{Galaxy Zoo}, launched as a standalone site without a discussion environment, as the tasks themselves were perceived as the primary method of transforming participation into scientific knowledge (illustrated by the `top path' of Figure \ref{fig:twopaths}). However, when a forum was soon added to handle the flood of questions received by the science team about common artefacts and confusions (such as camera glitches, streaks caused by satellite trails, or problems with the filters) \footnote{The original forum is still active at \url{www.galaxyzooforum.org}}, it became a vital part of the system.  
-
-% Beyond achieving the goals set out to take care of simple questions from new users, the forums also became a place by which users could share and discuss their favourite subjects they encountered, and ultimately, to perform collaborative sensemaking, by sharing, discussing and collecting evidence about unusual subjects that were spotted.  Less than a month after the GalaxyZoo Forum was launched, the citizen participant responsible for the ``Voorwerp'' discovery posted her message that would ultimately mark the project's first citizen-led discovery, of which several more followed.  This second, serendipitous ``path to science'' thus became a major focus for the Zooniverse team, illustrated as the bottom path of Figure \ref{fig:twopaths}. 
-
-% In the following sections, we briefly describe four examples of citizen-initiated investigations, focusing on the ways that citizens contributed to each.  We then discuss the implications of these findings on the design of these forums, and highlight the factors that led to \emph{Talk}, the next iteration of the forum design.
-
-%Therefore, by simply establishing an environment for a community to grow around a common set of tasks, the forums enabled community-driven serendipitous discovery. Here, we provide focused vignettes of four notable citizen-led initiatives, including three confirmed discoveries resulting from them, in order to convey the ways the discussion forums were used.  We then discuss the ways that the Zooniverse team refined the design of the discussion forums to better support distributed collaborative discovery-making.
-
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.44\textwidth]{imgs/twopaths.png}
@@ -377,12 +340,18 @@ In table \ref{tbl:serendipity}
 \label{fig:twopaths}
 \end{figure}
 
-% Ultimately, this process sparked the discovery of several previously unknown species, planets and phenomena, that have proven thus far among Zooniverse's most significant findings.  Thus, the Zoonivese team see two major ``Paths to Science'', illustrated in Figure \ref{fig:twopaths}. We briefly describe four such phenomena here, highlighting the unique aspects of each discovery, and the roles of the individual parties in each.
+The most discussed theme was that of citizen-led discoveries, which were not originally anticipated by either the Zooniverse nor science teams.  The original workflow intended of the Zooniverse, as with most conventional kinds of human computation, was  to apply the power of the crowd to essentially process a pre-specified set of subjects in a way that answered a particular specified set of scientific problem(s) articulated by the science team.  This workflow, illustrated by the `top path' of Figure \ref{fig:twopaths}, was successfully followed for a large number of scientific problems in Zooniverse, such as as deriving a morphological classification of galaxies (e.g. \cite{fortson2011galaxy}). 
+
+However, the addition of \emph{discussion facilities} to the Zooniverse opened up another pathway, which became apparent under a month after the Galaxy Zoo Forum first launched, when the citizen participant responsible for finding the ``Voorwerp'' posted her message that would ultimately mark the project's first citizen-initiated discovery.  This second, serendipitous ``path to science'', illustrated in the bottom path of Figure \ref{fig:twopaths}, meant that scientific questions that had not been anticipated might be identified and investigated by citizens themselves with various degrees of autonomy from the science teams.
+
+Here, we first briefly describe the most notable citizen-initiated investigations in order to highlight the ways that citizens contributed to each.  Central to each of these were Zooniverse's facilities for collaborative discussion, which provided both the conduit and  context for users to ask questions, generate hypotheses, and even validate each others' hypotheses.  Thus, we then focus on the design of the discussion forums, and how these were evolved by the team to support more effective citizen-led investigation. 
+
+\subsubsection{Roles in Citizen-initiated Zooniverse Science}
 
 \begin{table*}
 \begin{center}
 \begin{tabular}{p{1.5cm}p{0.7cm}p{1.0cm}p{10cm}p{0.19cm}p{0.19cm}p{0.19cm}p{0.19cm}p{0.88cm}}
-Investigation & Date & Project & Description & CI & CH & CC & CV & See also\\
+Investigation & Date & Project & Description & CI & CH & CC & CV & Details\\
 \hline
 \emph{Hanny's Voorwerp} & Aug 2007 & Galaxy Zoo 
    & User `Hanny' identified an unusual object near a Galaxy in a subject; science team followed up and it remains an object of active astrophysical research.
@@ -407,6 +376,16 @@ Investigation & Date & Project & Description & CI & CH & CC & CV & See also\\
 \normalsize
 \end{center}
 \end{table*}
+
+To better understand the process of citizen-initiated investigation and discovery, we consulted with the Zooniverse team to identify a set of examples where the science team picked up on a citizen-initiated investigation and carried it through.  While this method may have omitted many instances of citizen-initiated investigations among the hundreds of thousands of comments in the forums, our goal was not to estimate the number of such leads but to understand how the interactions with the science teams unfolded.  
+
+From the resulting list of 12, we chose 4 that reflected a variety of citizen roles, summarised in Table \ref{tbl:serendipity}. For each example, we assembled all available written evidence for each, including discussion and talk posts, as well as notes made by the science team, and a few blog posts made by participants.  These were then analysed to identify the kinds of roles assumed by various citizens during each process and the resulting workflow.
+
+Each of the four started with citizens bringing attention to something they saw in a subject during a task, although the purpose for making these posts varied; in two (Voorwerp and Convict Worm), the user was merely asking for help identifying the unknown object or species.  In Peas, meanwhile, the intention was primarily social, to attract attention to things that ``looked like peas''.  In the Kepler findings, the citizens already had a hypothesis that they had found something unusual and were both asking for help validating their hypotheses, and wishing to draw attention to these subjects for this reason.  
+
+The degree of further citizen involvement also varied among the four examples. For the Voorwerp discovery, the science team took the reigns on the investigation while periodically keeping the user updated about what she had found.  The others, however, featured more interaction between citizens and the team.   The posts about peas, for example were not picked up by the science team until a year after the first post, during which period, citizens had self-organised to collect more samples a year after the first post, during which period citizens had self-organised to collect more examples of pea-shaped galaxies.  (These ``pea hunters'' even called themselves the  ``Peas Corps'' \cite{story-of-the-peas}).  The convict worm, case illustrates an example where the science team quickly identified that the worm being identified might be an undiscovered species, and asked citizens for more help finding similar examples, which they did \emph{en masse}.  Finally, with the Kepler discovery, the users essentially performed their hypothesis forming and validation, consisting of modelling and light curve analysis.  This, done entirely independent of the science team, was then brought to the team's attention when complete.
+
+
 
 % \subsubsection{Individual Citizen-Initiated Discovery: \emph{Hanny's Voorwerp}}
 % In August of 2007, on the Galaxy Zoo forum, the user ``Hanny'', spotted an usual blue-shaped object in a subject beneath a galaxy, and posted a question in the Galaxy Zoo forum. Within an hour, two separate members of the science team had shown an interest in the subject and attempted to identify the shape, continuing to comment for a further thirteen days, concluding it was something ``weird [...] I'd like to know what it is''.  Within a few months, the science team confirmed  it as a phenomenon of unknown origin unlike any other previously observed, and remains an object of active astrophysical research today \cite{lintott2009galaxy}.
@@ -475,7 +454,7 @@ First, the forums used a standard linear message-board interface, comprising a s
 
 Given these forum limitations, it became the role of the forum moderators to monitor and de-fragment threads as necessary, moving posts between threads and even boards.  After trying to act as moderators themselves, the science team appointed a selection of the most active citizen participants with moderator privileges and status in the system.  But despite the dedication of this new group of volunteers, this proved often a challenging task as participation in the forums grew; the result was that regular members often posted messages to moderators to help them out, pointing out threads to merge and posts that would best fit elsewhere.
 
-While this technique succeeded at the beginning, overall participation among new users (across all Zooniverse projects) levelled off after an initial period of growth, and many factors suggested that the difficulty of navigating the forums was responsible. Such low adoption rates among new users were seen across projects, although a small set of core contributors seemed to continue to use it regularly.  (In fact, this core community also resisted any attempts to modernise and migrate discussions to a more structured format, which we describe next).
+While this technique succeeded at the beginning, overall participation among new users (across all Zooniverse projects) leveled off after an initial period of growth, and many factors suggested that the difficulty of navigating the forums was responsible. Such low adoption rates among new users were seen across projects, although a small set of core contributors seemed to continue to use it regularly.  (In fact, this core community also resisted any attempts to modernise and migrate discussions to a more structured format, which we describe next).
 
  % and still is the mechanism by which the original Zooniverse forums operate today, primarily among a small set of core contributors.  overall participation levels in the forums levelled off after an initial period of fast growth. Such low participation rates were present across Zooniverse projects such as Moon Zoo and Old Weather, and messages suggested that it was the difficulty of navigating these forums that was its cause.  cross the boards, however, it is worth noting that a core community continued to use the forums with a space to discuss the historical aspects of the project, in particular.
 
@@ -1153,6 +1132,8 @@ Acknowledgments omitted for blind review.
 %% such threads tend to be FAQ-style single post Q&A threads,
 %% and so it's possible this is why. In fact 'welcome' style
 %% threads are almost always started by moderators and these
+
+
 %% threads are among the most popular threads across all projects.
 %% However, certainly where moderators attempt to engage in
 %% pre-existing discussion threads, their comments are ignored and
