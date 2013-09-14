@@ -717,23 +717,33 @@ Beyond publicity, the Zooniverse team identified several factors that influence 
 
 % % \subsubsection{Other deployment considerations..}
 
-\section{Discussion}
+\section{Recommendations for Design}
 
 \begin{table*}
 \begin{center}
-\begin{tabular}{p{6cm}p{11cm}}
+\begin{tabular}{p{4.5cm}p{13cm}}
+Myth & Experience \\
 \hline
-Myth & Zooniverse Team Thoughts \\
+\emph{Myth:} Adding pre-task tutorials boosts task performance & The Zooniverse team saw that tutorials increased \emph{bounce rates} dramatically, reducing the number of tasks completed per hour, with no perceived effect on performance; instead, \emph{in-task guidance} was more effective at getting individuals involved. \\
 \hline
-\emph{Myth:} Adding pre-task tutorials boosts task performance & The Zooniverse team saw that tutorials increased bounce rates dramatically with no perceived effects on performance; instead, \emph{in-task guidance} was more effective at getting individuals involved. \\
-\emph{Myth:} Should get users to sign up and sign-in immediately & Forcing users to sign-up before participating can greatly increase bounce rate; getting users involved in a real task before signing in lets them both do useful work and become familiarised to the tasks/project - ``try before buying in''. \\
-\emph{Myth:} Experienced / advanced users perform better than new users &  To the contrary, support was seen for this; no correlation between duration of use and user performance (e.g., \cite{simpson2013dynamic}). \\
+\emph{Myth:} Get users to sign up to join a project before starting a task & Forcing users to sign-up before participating also increased bounce rate; getting users involved in a real task before signing in lets them both do useful work and become familiarised to the tasks/project - ``try before buying in''. \\
+\hline
+\emph{Myth:} Experienced users perform better than new ones &  To the contrary, support was seen for this; no correlation between duration of use and user performance (e.g., \cite{simpson2013dynamic}). \\
+\hline
 \emph{Myth:} Citizen scientists become domain experts over time &  Related to a previous myth, any expertise gain is just as likely to include `false' expertise - that is, users might learn something about certain galaxies, while simultaneously learning fallacies about other galaxies, in which case they can hardly be said to be experts. \\
-\emph{Myth:} Gameification sustains participation &  No, most of the reasons people participate in citizen science are intrinsic; gameification can interfere with intrinsic motivations; Zooniverse team's observations corroborate with \cite{thom2012removing}. \\
-\emph{Myth:} Include a `Don't know' button so users can skip hard tasks &  No; introducing a ``Don't know'' drives people to give up rather than working through difficult subjects; as described earlier, omitting a don't know button makes performing tasks more valuable. \\
-\emph{Myth:} Non-pictorial visual data are hard to understand &  Users fared well in \emph{Planet Hunters} who were given the ``raw'' light curve visualisations with little explanation of their significance. \\
+\hline
+\emph{Myth:} Gameification motivates participation &  No, most of the reasons people participate in Zooniverse was `to help science'; gameification had no perceived effect \\
+\hline
+\emph{Myth:} The subjects need to be beautiful/interesting for people to be motivated & Relating to the last myth, intrinsic motivation is primarily to help science; interestingness/variability of subject is but one of many factors that can influence participation but is not a singular driver (e.g., \emph{Ice Hunters}). \\
+\hline
+\emph{Myth:} Include a `Don't know' button for skipping hard tasks &  No; introducing it allows people to give up; omitting it makes performing tasks more valuable \& encourages valuable partial solutions. \\
+\hline
+\emph{Myth:} Non-pictorial subjects are hard to understand/scary &  Several counter-examples, including \emph{Planet Hunters} in which users were given the ``raw'' light curve data with little explanation, yet seemed to offer no significant challenge. \\
+\hline
 \emph{Myth:} It's good to strip ``irrelevant'' context from data subjects to focus users on their tasks & Users enjoyed knowing where data came from, such as source ship and date in \emph{Old Weather} and season and region in \emph{Snapshot Serengeti}, and ``irrelevant'' side notes in \emph{Old Weather} logbooks brought people to the project and drove participation. \\
-\emph{Myth:} ``If you build it, they will come'' &  Many factors contribute to whether citizen science programs attract users at launch; publicity, calls to action, having a clear purpose, and immediately engaging users.  \\
+\hline
+\emph{Myth:} ``If you build it, they will come'' &  Many factors contribute to whether citizen science programs attract users at launch; publicity, calls to action, having a clear purpose, and immediately engaging users. \\
+\hline
 \end{tabular}
 \caption{\emph{Citizen Science Myths} - Common myths associated with designing for citizen science, with the Zooniverse team's perspectives on each.}
 \label{tbl:myths}
@@ -747,7 +757,9 @@ Myth & Zooniverse Team Thoughts \\
 %      using favourites as a gauge of interestingness
 % We summarised these observations in an series of ``myths'', or anti-patterns based on the observations made in this study.
 
-In the previous section, we described the key experiences that shaped the way the Zooniverse team regarded the design of projects, pertaining to supporting serendipitous discovery, sustaining engagement, and planning project launches. To form these themes into design recommendations, we re-visited the themes with the Zooniverse team, and performed a collective brainstorming to frame them in terms of \emph{anti-patterns} or misconceptions that might occur as by first-time citizen-science designers. (Patterns and anti-patterns are a frequently used method to  document design recommendations and justifications in complex design spaces, originating in architecture and used widely in software and UX design\cite{alexander2006pattern}.)  The result of this process are the ``myths'' of Table \ref{tbl:myths}.
+% In the previous section, we described the key experiences that shaped the way the Zooniverse team regarded the design of projects, pertaining to supporting serendipitous discovery, sustaining engagement, and planning project launches. To form these themes into design recommendations, we re-visited the themes with the Zooniverse team, and performed a collective brainstorming to frame them in terms of \emph{anti-patterns} or misconceptions that might occur as by first-time citizen-science designers. (Patterns and anti-patterns are a frequently used method to  document design recommendations and justifications in complex design spaces, originating in architecture and used widely in software and UX design\cite{alexander2006pattern}.)  The result of this process are the ``myths'' of Table \ref{tbl:myths}.
+
+In order to consolidate the themes just described into design recommendations, we re-visited them with the Zooniverse team to identify beliefs that they, themselves, or others in the field, thought were good ideas that were contradicted through experience.  These were consolidated into a set of \emph{anti-patterns} or ``myths of citizen science'', visible in Table \ref{tbl:myths}.  (Patterns and anti-patterns are a frequently used method to  document design recommendations and justifications in complex design spaces, originating in architecture and used widely in software and UX design \cite{alexander2006pattern}.)  
 
 \section{Limitations and Future Work}
 Pertaining to generalisability of our findings, it should be noted that, despite the diversity of scientific fields represented by the Zooniverse projects, this analysis centred upon a single family of projects with common characteristics that may not pertain to other citizen science systems.  For example, the priority of all Zooniverse projects is \emph{scientific outcomes and discovery}, while other systems may have different, even multiple, priorities. Educating users, for instance, was not among the team's design goals, which is reflected in decisions such as that to reduce the tutorials, explanations and feedback to the minimum necessary to complete tasks.  While effective at increasing users' time on tasks, this had the effect that users did not readily gain skill in task performance over time, as evidenced by the fact that experienced users rarely outperformed new ones.  A second characteristic was that, as previously found \cite{raddick2010galaxy}, intrinsic motivation, that is, the desire to assist science, was responsible for the citizen participation among the Zooniverse projects.  This influenced strategic choices made by the team as such whether and how to communicate scientific milestones to participants to provide frequent feedback to users about what their efforts have enabled.  It was also seen to even inspire the science teams to conduct investigations and prepare articles expediently, as it was often felt that they ``owed it to the users'' to deliver on their commitment to publish results, given the dedication of the citizen community.  Finally specific characteristic of Zooniverse is that, as described earlier, its tasks are focused on \emph{classification}, rather than data collection or problem solving.  While it is possible that our observations may generalise to other kinds of tasks, we refrain from making such claims given the complexity of understanding the many design dimension of these systems.
