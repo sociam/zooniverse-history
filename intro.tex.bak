@@ -1,0 +1,66 @@
+\section{Introduction}
+
+Internet-based ``citizen-science'' projects enables hundreds of thousands of untrained human volunteers to contribute to scientific research across a variety of domains \cite{citizen-science}. Reviving the old tradition of 'amateur' scientific discovery, which includes prestigious names such as Darwin, Leibniz, and Newton, projects such as eBird \cite{eBird}, FoldIt \cite{foldit}, OldWeather \cite{oldweather}, and Stardust@Home \cite{stardust} convincingly demonstrate that a crowdsourced approach to science can be valuable both to the participants, as educational tools and cognitively-stimulating puzzles \cite{citizen-science-in-curricula}, and the broader research community. It offers a scalable and accurate means to gather and analyze large data sets, and help solving challenging problems, which, due to their size and complexity, remain difficult to master within existing scientific teams or with the support of state-of-the-art computing technology \cite{fortson-2011, lintott-08, lintott-11, simpson-12, davis-11}.
+
+% zooniverse et al publications >
+% https://www.zooniverse.org/publications
+% http://mnras.oxfordjournals.org/content/424/4/2442.full
+
+% davis-12 : The distribution of interplanetary dust between 0.96
+% and 1.04 au as inferred from impacts on the STEREO spacecraft
+% observed by the heliospheric imagers, Davis+ 2012.
+
+% sayighs : Repeated call types in short-finned pilot whales,
+% Globicephala macrorhynchus, Sayigh+ 2012.
+
+%However, designing successful citizen science systems that are mutually beneficial in this way and that can successfully sustain participation and useful results over time can be exceedingly difficult.  The reasons are several: first, due to the emerging nature of the field, key design principles and \emph{best practices} are not yet known or established.  Despite considerable overlap with other kinds of human computation-driven systems (e.g., mechanical turk \cite{}), key differences in the ways that participants engage with citizen science online means that these systems have predominantly required 'starting from scratch', to explicitly consider a greater number of design factors, features and dimensions. For example, although human computation systems often apply extrinsic reward schemes to drive participation, such rewards are usually inappropriate for citizen scientists who are predominantly intrinsically motivated to contribute\cite{extrinsic-vs-intrinsic}. However, since the specific motivations that motivate people typically personal and idiosyncratic \cite{raddick2010galaxy}, understanding  ways to address and engage them can be challenging to design for.  Participants typically interact with with citizen science systems in many different ways beyond merely performing tasks, such as by taking part in discussions, interacting with the science teams, sharing subjects they found interesting, and so forth. meaning that measuring 'success' itself can be diffficult.  Finally, the simple fact that, over time, the more time has elapsed simply forget about any particular system, means that retaining experienced particpants over time.
+
+This paper explores the design space of Internet-based citizen-science projects. We contribute a detailed case study of a citizen-science platform called \emph{Zooniverse} \footnote{Zooniverse - \url{www.zooniverse.org}}, which expanded from a one-time experiment in crowdsourced data analysis in astronomy to a true ``factory for citizen science'', an authority for generating successful Web applications for research teams in different domains in natural sciences and the humanities. As of September $2013$, Zooniverse-assisted research resulted in scientific findings published in over (TODO -- $57$) journal articles, advancing the state of the art in disciplines as diverse as astrophysics, zoology, archaeology, cell and marine biology, and climatology. This was achieved with the help of the sustained effort of a dedicated and efficacious community of more than $800.000$ of users, that pursue (and often complete) new projects and analyze large collections of images, video, and audio records soon after their release.  Perhaps of most significance, several Zooniverse projects have benefited from \emph{citizen-initiated} serendipitous scientific discoveries, which have resulted in bi-directional collaborative processes between the volunteers and professional scientists, for evidence collection, hypothesis generation, and validation.
+
+The case study will shed light on those aspects in the design and operation of citizen-science projects that have played a determinant role in the incredible success story behind Zooniverse. It will build upon the vast knowledge and unique perspective of the Zooniverse team to define a set of guidelines and best practices in this emerging new field, which will enable scientific teams around the world to replicate this experience and realize systems that 
+
+
+However, it can be extremely difficult to design successful citizen science systems that can achieve this mutually beneficial characteristic and that sustain participation over time. 
+
+The reasons are several: first, despite similarities with other kinds of human computation-driven systems, such as typical crowd-sourcing platforms like Amazon Mechanical Turk\footnote{Amazon Mechanical Turk \url{www.amazon.com/mechanicalturk}} or CrowdFlower\footnote{CrowdFlower \url{crowdflower.com}}, participants typically interact with with citizen science systems in many ways beyond performing tasks, such as by taking part in discussions, interacting with the science teams, sharing subjects they found interesting, and so forth.  These many ways that participants engage with citizen science systems reflects the many, varied, and often idiosyncratic motivations behind their reasons engaging with them, the landscape of which is still only starting to be understood \cite{raddick2010galaxy}.  % Designing to engage citizens along these many, personal reasons for participating requires an understanding of these motivations, the activities they foster, and ways to support these activities.
+
+Even when such considerations have been made, citizen science systems can fail for many reasons.  Often, these are due to factors essentially out of the control of the system designer; for example, for some projects, the domain subject matter or task may be intrinsically less interesting to members of the general population than others.  In some cases, the subjects being examined might be perceived as unpleasant, or even off-putting; tasks, for example, involving the identification of dead animals, or to locate parasites in  tissues of living patients may fall into this category.  Other factors that could contribute to a project failing include aspects of the ways it is announced or launched, or the communications channels and resources allocated to provide community support over time.  Merely the ways that the community is structured to support these projects, such as how moderators are chosen and the powers and responsibilities they are given, could further influence long-term participation in the project as a whole. The combination of these factors means that designers must both cope with a high-dimensional, complex design space that is difficult to explore, and outcomes that are quite unpredictable and uncertain (e.g., \cite{ebird, ubiome, druschke2012failures}).
+
+% what makes it successful?
+% goals: to educate individuals ? (no)
+%   to produce science (yes! 200 papers ...)
+%   to sustain comunity for creating more science (yes!)
+%% but is it efficient?
+
+% elena notes:
+% some domains are more boring than others, worms versus galaxies
+% some domains are dangerous --
+
+%comment from mlr:
+%possibility of emergence is crucial to a social machine (would zooniverse be a social machine without the forum and/or talk?)
+%(e.g. zooniverse example: users wanted to keep the forum, which ich much more loosely coupled to the core task than talk)
+%you can build a social networking application which never becomes a social machine because it hinders the user to link in and out of the system (e.g. a native app, here it comes to the open innovation relation, conventional business models are a barrier many people to go for Web instead of app)
+
+%, to explicitly consider a greater number of design factors, features and dimensions.  understanding  ways to address and engage them can be challenging to design for.  meaning that measuring 'success' itself can be diffficult.  Finally, the simple fact that, over time, the more time has elapsed simply forget about any particular system, means that retaining experienced particpants over time.
+
+% we want to switch this from interviews to (in crowd).
+% TODO - Ramine - please update this ``retrospective reflective inductive...''
+% to something that makes sense - we sat as a group with key team mebers and identified
+% themes
+
+
+This experience given the Zooniverse team a unique perspective on the many variations of needs pertaining to citizen science problems, and extensive experience in designing and deploying such systems in production. These projects followed an evolutionary, iterative design process, applying insights derived each project to the next, with some projects re-designed and re-launched several times.  This process permitted the team to explore design decisions at multiple levels, from the interface/task design level, to the design of discussion forums, to launching and involvement strategies for sustaining prolonged engagement.
+
+%
+
+%  The diversity of projects required different scientific domains, as it involved working closely with zoologists, archaeologists, astronomers, cell biologists, marine biologists, ecologists, biologists, climatologists, geneticists, classicists and historians, among others.
+
+ % Zooniverse also represents the first system in which volunteer contributions directly resulted in the publication of scientific findings in academic journals, contributing findings to at least $P$ published scientific papers.
+
+% Zooniverse projects are of benefit to zoologists, archaeologists, astronomers, cell biologists, marine biologists, ecologists, biologists, climatologists, geneticists, classicists and historians(and potentially others as well, from retired projects)
+
+In this paper, we summarise the results of a retrospective reflective thematic analysis conducted with core members of the Zooniverse team, to identify the key design decisions that were made, and to document the informal knowledge gained from their process.  This was done primarily to allow perspectives on this complicated design space to be shared with both UX practitioners interested in designing for citizen-science, as well as to contextualise these design dimensions against the growing crowd-sourcing and online community studies being in the HCI research community.
+We begin with a short history of the project in order to introduce readers with the context for the following discussion, followed by a dimensional design analysis of particular aspects of Zooniverse's deployment.  Finally, we discuss Zooniverse's team's perspective of the greatest difficulties for building more effective citizen science: $X$, $Y$ and $Z$, and ways that HCI research may be able to help.
+
+% maybe a tad redundant:
+%% The goal of the this paper is to, first, document the informal knowledge gathered by the Zoonvierse team pertaining to how to design successful citizen science projects, based on their experience of launching 27 projects since the platform's genesis.  These insights are then discussed in the greater context of human computation, to derive design recommendations and discuss factors that may be responsible for the observations made. We begin with a short history of the project in order to provide readers a context for the following discussion, followed by a grounded dimensional design analysis of particular aspects of Zooniverse's deployment.  Finally, we discuss Zooniverse's team's perspective of the greatest difficulties for building more effective citizen science: $X$, $Y$ and $Z$, and ways that HCI research may be able to help.
