@@ -410,17 +410,12 @@ Despite the growth of the forums, only a small percentage of users who performed
 
 These goals were realised with \emph{Talk} in several ways; the first was by prompting users explicitly  'Would you like to discuss this?' after each task.  While this posed the risk of adding the extra burden of dismissing these prompts when a discussion was not desired, no effect was seen on long-term interactions.  For other projects, the team merely made a salient ``discuss this'' button which appeared on a subject after it was classified.  While the strategies differed slightly in effect, the resulting difference, in number of discussions started per subject, was not significant.  The team is currently testing variations of these designs, which will be reported in a later analysis.
 
-% , increasing engagement with Talk at the cost of potentially slowing down classification work by adding an additional prompt in the main interface.  (The explicit prompts required as much effort to enter Talk as it was to dismiss the prompt - a single additional click.) As much of the Planet Hunters science has come from Talk, this trade seemed worth making for this project.  In the Milky Way Project,  meanwhile, launched a few weeks later, Talk was offered as one of three options after work on a particular subject is completed ('Save', 'Save and Discuss' - which leads to Talk, and Cancel).  This induced fewer participants to access the project's Talk features, which, in fact turned out to be the case, as visible in Figure \ref{}.  %% TODO quant
-% % TODO quant analysis : measure the effect of talk prompts >> 
-% % prompting people to use talk vs giving people the option to look at talk (among other things) vs ... 
+A second problem pertained to \emph{authority thread death}, in which a voice of perceived authority, usually a moderator, responding to a thread causes it to fall silent.  The  explanations for this phenomenon have been proposed in terms of social actor theory,  reciprocity and social network theory \cite{preece2003online}, and incorporate factors such as people not wishing to be seen to be challenging authority, to there being a diminished need.  To compensate for this phenomenon, the Talk design team decided to put a ``twitter-like'' 140-character text box underneath each subject, to encourage participants to make quick comments on the subject with whatever they liked.  This format, being less structured, formal, and more egalitarian than the forums, meant that people would only see a selection of recent ``tweets'' about the subject beneath theirs, and would be less likely to be put off by a moderator's input.  This facility significantly increased comments made about subjects; and the team is currently pursuing potential strategies to process  derive insights from these comment streams.
 
-\subsubsection{Avoiding Thread-Death}
-% However, another significant factor influencing the success across instances of Talk seems to be involvement of the science team in discussions, especially in the first few days of a project. Early engagement allows trust to build up between moderators, community and professional scientists which sustains a community in the long term. This is now a key consideration in project selection and timing of launch. 
+% The status of each user, specifically whether or not they were a moderator or member of the science team, was also suppressed to reduce this effect.  %  AND THI%
+% Although killing threads seems to rarely be an actual intention of any of the Galaxy Zoo Forum moderators, as exhibited by their occasional efforts to try to revive these threads by asking rhetorical questions to seldom avail, this problem nonetheless occurred frequently in the original forum.
 
-%% TODO reference :: authority thread death
-The second strategy was devised to overcome the problem of \emph{authority thread death} \cite{} a problem frequently observed in online forums caused by a voice of perceived authority, usually either a moderator or merely confident person, posting in a forum, resulting in the thread being subsequently \emph{killed}, with no further participation.  The psychological explanations for authority thread death have been explained in terms of people not wishing to challenge authority, to there being a diminished need (e.g., since an authority has spoken, there is nothing further to be said).  Although killing threads seems to rarely be an actual intention of any of the Galaxy Zoo Forum moderators, as exhibited by their occasional efforts to try to revive these threads by asking rhetorical questions to seldom avail, this problem nonetheless occurred frequently in the original forum.
-
-The second version of Talk sought to circumvent thread death by simply adding an additional affordance for adding a comment about a subject on the Talk page.  Taking inspiration from microblogging interfaces, the team decided to put a ``twitter-like'' 140-character box underneath each subject, to encourage participants to comment on the subject with whatever they liked.  This format, being less structured, formal, and more egalitarian than the forums, meant that people would only see a selection of recent ``tweets'' about the subject beneath theirs, and would be less likely to be put off by a moderator's input.  The status of each user, specifically whether or not they were a moderator or member of the science team, was also suppressed to reduce this effect.  %  AND THIS WORKED TODO 
+%The second version of Talk sought to circumvent thread death by simply adding an additional affordance for adding a comment about a subject on the Talk page.  Taking inspiration from microblogging interfaces, the team decided to put a ``twitter-like'' 140-character box underneath each subject, to encourage participants to comment on the subject with whatever they liked.  This format, being less structured, formal, and more egalitarian than the forums, meant that people would only see a selection of recent ``tweets'' about the subject beneath theirs, and would be less likely to be put off by a moderator's input.  The status of each user, specifically whether or not they were a moderator or member of the science team, was also suppressed to reduce this effect.  %  AND THIS WORKED TODO 
 
 %% TODO someone: 
 %% The effect of the introduction of this Twitter is ___________________________
@@ -505,10 +500,10 @@ By comparison, there was no perceived preference in research field, topic, or ta
 
 % More recent Zooniverse projects have been able to include synthetic or expert data. This has meant that in many cases a user can be given instant feedback on their classification. Reactions have been almost universally positive, and it appears to give confidence to some users who might otherwise have not continued with the project. The most recent example is Spacewarps, which gives continuous feedback, although at an ever-decreasing rate, throughout a user's time on the site.
 
-\subsubsection{Tutorials: Harnessing One-Hit Wonders}
-A common challenge to many human-computation systems is in teaching new users to perform the tasks being asked of them.   One common approach to getting users familiarised is to provide an instructional tutorial (e.g.,\cite{gutheim2012fantasktic}).  However, there are many design decisions that need to be made to design such a tutorial, such as whether the tutorial should be interactive, or simply explanatory text or video? How much background about the task should the tutorial go into?   How long and thorough should the tutorial be?
+\subsubsection{Tutorials: Helpful or Harmful?}
+A common challenge to many human-computation systems is in teaching new users to perform the tasks being asked of them.   One common approach to getting users familiarised is to provide an instructional tutorial (e.g.,\cite{gutheim2012fantasktic}) at the beginning.  Yet, the design of effective tutorials is not well documented, and design questions abound, including how they should be delivered, and how such tutorials affect engagement.
 
-In citizen science, these questions are particularly difficult to answer because of the specialised nature of many of the tasks.  Some of the classifying tasks of GalaxyZoo, for example, involve identifying properties of intergalactic phenomena that most users may not have even heard of prior to participating.  Similarly, even more ``down to earth'' domains such as Snapshot Serengeti involve identifying animals among a huge variety of species, many peculiar to the Serengeti habitat, such as the \emph{secretary bird} or \emph{aardwolf}. How are users to possibly know how to identify and classify creatures and phenomena they know nothing about?
+In citizen science, these questions may be particularly challenging because of the specialised nature of many of the tasks.  Some of the classifying tasks of GalaxyZoo, for example, involve identifying properties of intergalactic phenomena that most users may not have even heard of prior to participating.  Similarly, even more ``down to earth'' domains such as Snapshot Serengeti involve identifying animals among a huge variety of species, many peculiar to the Serengeti habitat, such as the \emph{secretary bird} or \emph{aardwolf}. How are users to possibly know how to identify and classify creatures and phenomena they know nothing about?
 
 A second consideration was tied to the intrinsic motivation factors discussed earlier; since users were motivated by their own curiousity and desire to help, if users were taught more about \emph{what} they were looking at, or the purpose of the scientific investigation, then would they have become more likely to contribute?
 
@@ -608,113 +603,31 @@ In 2012 and 2013, there has been a rising fraction of users accessing Zooniverse
 
 The team also looked at the impact of primary interface modality on project popularity.  In particular, it was noticed that projects that involved use of audio classification, namely \emph{Whale.Fm} and \emph{Bat Detective}, both failed to sustain as much attention as those that relied on visual elements.  The team is planning on investigating possible reasons for this disparity in the future.
 
-% \subsection{Launching and Outreach}
+% \subsection{Launching Projects}
 
+% \begin{figure}[tbp]
+% \centering
+% \includegraphics[width=0.50\textwidth]{data/launch-profiles/launch-profiles.png}
+% \caption{\emph{Launch profiles for 4 example Zooniverse projects} - Displays the number of users per day for the first three weeks of four projects: Snapshot Serengeti, Andromeda Project, Space Warps, and Whale FM}
+% \label{launchprofiles}
+% \end{figure}
 
-\subsection{Launching Projects}
+% % Andromeda, Whale FM, Spacewarps and Snapshot Serengeti as case studies
 
-\begin{figure}[tbp]
-\centering
-\includegraphics[width=0.50\textwidth]{data/launch-profiles/launch-profiles.png}
-\caption{\emph{Launch profiles for 4 example Zooniverse projects} - Displays the number of users per day for the first three weeks of four projects: Snapshot Serengeti, Andromeda Project, Space Warps, and Whale FM}
-\label{launchprofiles}
-\end{figure}
+% The final theme we discuss here pertains to launching projects and outreach efforts, including the use of social media, newsletters, and other promotional material.
 
-% Andromeda, Whale FM, Spacewarps and Snapshot Serengeti as case studies
+% It is a common misconception that websites are busy by default. Significant publicity and attention are often required to reach the right potential audiences for an online citizen science project. Networks and communities exist online to allow people to discover and share online projects, and are a valuable starting point for finding such individuals. The Zooniverse was one of the first organisations in this field and has grown a substantial network of people around it (\~ 860,000 at time of writing).
 
-The final theme we discuss here pertains to launching projects and outreach efforts, including the use of social media, newsletters, and other promotional material.
+% Shown above in Figure \ref{launchprofiles} shows the number of users per day for the first three weeks of activity on four Zooniverse projects: Whale FM (Nov 2011), The Andromeda Project (Dec 2012), Snapshot Serengeti (Dec 2012) and Spacewarps (May 2013). Each project displays a subtly different profile of activity in its first days and weeks. Snapshot Serengeti and Space Warps enjoyed a healthy start of 80,000 users on launch day, mostly consisting of existing Zooniverse users (from other projects) responding to the launch announcement newsletter. % For example ... X and Y .... 
 
-It is a common misconception that websites are busy by default. Significant publicity and attention are often required to reach the right potential audiences for an online citizen science project. Networks and communities exist online to allow people to discover and share online projects, and are a valuable starting point for finding such individuals. The Zooniverse was one of the first organisations in this field and has grown a substantial network of people around it (\~ 860,000 at time of writing).
+% As can be inferred from this, Zooniverse projects draw a substantial number of contributors from the pre-existing greater Zooniverse community. The Andromeda Project, mentioned above, was completed in a mere sixteen days thanks to a surge of activity from existing Zooniverse members, meaning all subjects were classified and tasks completed fully during this period.  Without this community, would have taken much longer.  Similarly, the initial surge in traffic on the Spacewarps project had 10,000 people contributing 500,000 classifications in its first twenty-four hours, and continued to sustain participation, with more than 10,000 people unique visitors daily even three weeks later, a majority of whom were seasoned ``Zooites''.  By comparison, it took weeks for blogs and news sites to pick up on the project and publish about it more widely.
 
-Shown above in Figure \ref{launchprofiles} shows the number of users per day for the first three weeks of activity on four Zooniverse projects: Whale FM (Nov 2011), The Andromeda Project (Dec 2012), Snapshot Serengeti (Dec 2012) and Spacewarps (May 2013). Each project displays a subtly different profile of activity in its first days and weeks. Snapshot Serengeti and Space Warps enjoyed a healthy start of 80,000 users on launch day, mostly consisting of existing Zooniverse users (from other projects) responding to the launch announcement newsletter. % For example ... X and Y .... 
+% Thus, while a substantial quantity of useful work can be done by one-time visitors described earlier, having a core community propelled many of the later project launches, bringing quick attention and results faster than any normal recruitment mechanisms would have.  
 
-As can be inferred from this, Zooniverse projects draw a substantial number of contributors from the pre-existing greater Zooniverse community. The Andromeda Project, mentioned above, was completed in a mere sixteen days thanks to a surge of activity from existing Zooniverse members, meaning all subjects were classified and tasks completed fully during this period.  Without this community, would have taken much longer.  Similarly, the initial surge in traffic on the Spacewarps project had 10,000 people contributing 500,000 classifications in its first twenty-four hours, and continued to sustain participation, with more than 10,000 people unique visitors daily even three weeks later, a majority of whom were seasoned ``Zooites''.  By comparison, it took weeks for blogs and news sites to pick up on the project and publish about it more widely.
+% Zooniverse was not without its coverage in major media outlets, however, with the team benefiting from coverage in both traditional media outlets and online media, including international media networks such as the BBC (on \emph{The Sky At Night} and \emph{Click}), widely-read scientific magazines including regular coverage in the ``Citizen Science''` column of \emph{Scientific American}, and featured articles in \emph{National Geographic} \cite{zooniverse-natgeo}.  Such coverage regularly resulted in traffic spikes and influxes of new users.
 
-Thus, while a substantial quantity of useful work can be done by one-time visitors described earlier, having a core community propelled many of the later project launches, bringing quick attention and results faster than any normal recruitment mechanisms would have.  
+% Beyond publicity, the Zooniverse team identified several factors that influence parcitipation at launch.  First, having a `Call to Action' appeared to improve retention; moreover, sites with less text, and clear, succinct front-page messages descriptions of a project had lower bounce rates overall.  This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation. 
 
-Zooniverse was not without its coverage in major media outlets, however, with the team benefiting from coverage in both traditional media outlets and online media, including international media networks such as the BBC (on \emph{The Sky At Night} and \emph{Click}), widely-read scientific magazines including regular coverage in the ``Citizen Science''` column of \emph{Scientific American}, and featured articles in \emph{National Geographic} \cite{zooniverse-natgeo}.  Such coverage regularly resulted in traffic spikes and influxes of new users.
-
-Beyond publicity, the Zooniverse team identified several factors that influence parcitipation at launch.  First, having a `Call to Action' appeared to improve retention; moreover, sites with less text, and clear, succinct front-page messages descriptions of a project had lower bounce rates overall.  This was first seen clearly with Planet Hunters but also with Galaxy Zoo's fourth incarnation. 
-
-% However above simple awareness, any creator of a citizen science project should be aware of the approximate effort required. Most Zooniverse sites enlist the help of tens of thousands of online volunteers. Thus when projects are designed, consideration should be given to the scale of the endeavour being attempted. Taking into account a reasonable expectation of web traffic and the effort any person may put in is difficult (how long is a piece of string?) but important for establishing a project with a realistic end goal within the required time. Simply producing a citizen science website does not guarantee popularity -- or more importantly scientific completion of the intended task.
-
-% Difficult to form community without 'luck' - Sky at Night and media plugs for various projects, for example, more down to who is on the team. Certainly not users flocking to Zooniverse just because it exists.
-
-% With more than 27 projects launched over just a few years, the Zooniverse platform is host to a series of natural experiments regarding the announcement and subsequent take-up of citizen science projects. There are a large number of variables affecting the potential uptake of any new site including but not limited to; method of announcement (e.g level of press coverage, size of existing community), `stickiness' of proposition (i.e. discovering an exoplanet is generally more exciting as a proposition than differentiating genetic subsamples of nematode worms); difficulty of task; technological requirements (e.g. Does the site work on desktops, tablets, smartphones); and many more.
-
-% TODO: Rob - Add annotations to this plot and talk about events that influenced the profiles. Note that the launch iof Serengeti gives Andromed a boost a week in.
-%Add annotations to this plot and talk about events that influenced the profiles. Note that the launch iof Serengeti gives Andromed a boost a week in.
-
-% \subsubsection{Response from Existing Zooniverse Community}
-
-% After the launch of each project, the entire Zooniverse community is emailed an announcement with an explanation of the new project, and how to participate. This pre-existing set of users -- who already have a sign-in for any new Zooniverse site -- is often enough to create a sizeable surge in activity in the early days of a project. In cases where no press coverage exists, this initial boost is sometimes crucial in producing useful data. The case of the Andromeda Project is particularly interesting, as this was the Zooniverse's first new space-based project for almost a year and it did not receive significant press coverage. However, the response from the Zooniverse community was so large that it completed its entire requirement of 1.1 million classifications in sixteen days. Similarly, the initial surge in traffic on the Spacewarps project was impressive (10,000 people contributed 500,000 classifications in its first twenty-four hours) and sustained (more than 10,000 people were visiting the site every day even three weeks later), and it took days for blogs and news sites to pick up the project and publish about it more widely.
-
-
-
-
-% TODO: Can we show a visual example of a call to action versus not?
-
-
-% http://blog.andromedaproject.org/2013/01/14/first-results-at-aas/ is the source for the change above from "just over two weeks" -> 16 days
-
-% \subsection{Sustaining Engagement}
-% Consistent with visitation patterns to most web sites \cite{TODO}, it was observed that visitors to the Zooniverse apps were increasingly likely to leave the site every passing minute on the site, than to stay.  Moreover, since after a user left, the probability that they would ever return was estimated to be at most an odds ratio of $10-to-1$, maximizing the amount of participation meant engaging users with tasks as soon as they first landed.  This had profound implications on the design of the tutorial, as we describe later, getting users acquainted to the system and their task.  The result of optimising this process, however, did allow a significant amount of contributions to be gathered by short-stayers; ultimately, over half of Zooniverse's classifications were performed by users who only visited the site \emph{once}.
-
-%% immediately was a priority for maximizing the amount of potential participation overall.  Even more the likelihood of a later return to the site was (Over half of the classifications were contributed by users who never returned. This of course, has significant implications 
-%% From the very first moment that a user arrives on a website, they are more likely to leave than to stay. The faster they can be engaged with participation in the main (citizen science) task, the more people will have participated over all.
-%% % TODO this has a significant implication for the training/tutorial phase for getting new users oriented with their task, as users are likely to leave
-
-% \subsection{Engagement: Interestingness x Difficulty x Context}
-% By no surprise, a key factor that sustains participant motivation pertains to interesting-ness of the subjects themselves.  For example, those who witness ``beautiful'' galaxies in Galaxy Zoo, or an image containing interesting animals in Snapshot Serengeti, will stay longer and perform more classifications than those who did not see said images. In the case of projects where the subjects may not be inherently interesting, such as Old Weather, use of additional information and context can increase how interesting a subject is to users. In Old Weather, this included log book pages which were not related to weather data, which have resulted in significant numbers of discussions through the project forum.
-% To measure the importance of the inherent interest a subject holds for engagement, we identified which subjects were most favourited, and examined whether those users who witnessed these subjects stayed longer, which was significant (Statistical measure). %TODO: Rob please!
-
-% % Another key factor seems to be the graspability of the task - (and this can be challenging; for example, Galaxy Zoo is not about discovering galaxies, but documenting galaxy evolution as a function of their geometry) 
-
-% A third factor pertains to task difficulty. Projects with innately simple to perform tasks (e.g. Ice Hunters, Spacewarps) show much higher classifications-per-user numbers than projects with more difficult tasks (e.g. Milky Way Project, Cyclone Center). The complexity or difficulty of a task does not appear to be correlated with how long users spend on the site in any session, however; Moon Zoo and the Milky Way Project have similar interfaces but very different dwell times. Conversely, Ice Hunters and Old Weather had similar dwell times for many months, despite one being far more complex than the other.
-
-% % Having a clear call-to-action / message
-% % Feedback: progress TODO: (move up here from down below)
-
-% %%   % TODO: can we say anything about the effect of the narrative in Old Weather? 
-% %%   % evidence in the discussion forums ? 
-% %%   %   > i wonder why the handwriting has changed?
-% %%   %   > most keen to help each other out -- 
-
-% %% did they create rules - placing limitations to achieving the goal -> make a challenge
-% %% what feedback system did they use and what was the overall goal
-% %% icebergs/seal hunting : people really wanted a seal. :( 
-% %% audio :: 
-% %% posters vs 
-% %% adding context: old weather
-% %% achieving flow state
-
-% Since Galaxy Zoo 2 there have been occasional project-`ometers' created to show progress of the community toward a common goal or project completion. The Planet Hunters `Planetometer' displays the total number of classifications of the project, as well as the number planet candidates discovered. The `Moonometer' shows the cumulative area of the Moon that Moon Zoo has scoured for craters in various units\footnote{Units include Square Miles, Football Fields, Taj Mahals, Switzerlands, Utahs, Texas, Polands, Wales, Whales and others -- see http://www.moonzoo.org/moonometer}. These counters exist on many projects but not all. When counters were present, participants often noticed when project milestones were being approached, as well as when new subjects were introduced.  In the former, participants sometimes posted messages in the forums pointing out that they were approaching the particular milestone to motivate others to pitch in to help.  In the latter, the addition of new data meant that there was significant new work to be done, and participants occasionally posted messages rallying support for starting on the task.  These ``project-o-meters'' also indirectly seemed to support bringing in  participants by attracting journalists and bloggers who often wrote about projects' progress citing these meters, which, in turn drove further traffic to them. 
-
-% milestone - when they didn't want to finish the logs because they didn't want to finish it off
-
-
-% % In addition to remarks on tutorials, there are other ways to give users feedback about their efforts in citizen science.
-
-
-% %% TODO: Rob: Anything to say about the way we measure engagement? has this changed? 
-% %% \subsection{Measuring Engagement}
-
-% \subsection{Interaction Flow}
-% % jump straight to action, no introductory video
-% % start with 1 GS, interleave gold standards w/ real things
-
-% \subsubsection{Social Media}
-% % favouriting, tweeting, blog posts
-
-% % TODO: Move to -------------> out of this section
-% \subsection{Deployment Constraints on Design}
-
-% \subsubsection{Low-Latency Interaction at Scale}
-% Creating a responsive online environment requires more sophisticated back end technology. Classification subjects must be drawn out of the whole set on a per-user basis (e.g. users should not see the same subject twice). This creates load on the database every time a new user comes to the classification interface. This situation creates a problem with large datasets, where grabbing a random subject could take up to several seconds; a very long time on a website. The need for reduced load times led to the adoption of \emph{Redis} a database/queue system that can deliver random assets quickly. It also prompted a move away from standard \emph{MySQL} databases per-project and toward a unified \emph{MongoDB} datastore.
-
-% The combination of \emph{MongoDB} and \emph{Redis} means not-only faster websites, but also allows for more complex subject selection rules. For example, it becomes possible to group-up and prioritise subjects, or vary the number of required classifiers over time. Significantly it has allowed for subjects to be retired from classification if they contain nothing of note. This has hugely improved the issue of projects with intrinsically less-appealing or repetitive datasets.  
-
-% % \subsubsection{Other deployment considerations..}
 
 \section{Recommendations for Design}
 
