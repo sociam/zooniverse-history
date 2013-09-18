@@ -156,8 +156,7 @@ We begin with a brief introduction to Zooniverse, followed by a presentation of 
 \small
 \begin{tabular}{lcllclll}
 \hline
-Project & Status & URL & Launch & Domain & Logged-In & Subjects & Task \\
-Name &  &  & Date &  & Users &  &   \\
+Project & Status & URL & Launch & Domain & Users & Subjects & Task \\
 \hline
 \hline
 Galaxy Zoo & Retired & zoo1.galaxyzoo.org & 11 Jul 2007 & Space & 165,000 & 890,000 & Classifying \\
@@ -218,24 +217,33 @@ Users who participate in Zooniverse projects extensively may be rewarded with mo
 
 \section{Method}
 
-\begin{figure}[tbp]
-\begin{center}
+%\begin{figure}[tbp]
+%\begin{center}
+%\begin{enumerate}[itemsep=1mm]
+%\item \emph{When you design and launch a new project now, what do you do differently than you would done at the start?}
+%\item \emph{Were there any surprises, or unexpected outcomes?}
+%\item \emph{What made projects most and least successful?}
+% \item \emph{What were your best ideas and worst mistakes?}
+%\end{enumerate}
+%\vspace{10pt}
+%\caption{\emph{Probes for triangulation} - The interview process started with (and iteratively returned to) these four main questions as probes, to yield the main themes for analysis.}
+%\label{tbl:questions}
+%\end{center}
+%\vspace{-18pt}
+%\end{figure}
+
+% Our objective was to identify the ways that the team's concrete experiences and project outcomes influenced they way they, in turn, designed and managed citizen science projects.  In so doing, we sought to understand the team's view on the 
+
+To identify the insights that most influenced the decisions the team made when designing, launching and conducting new projects, we adopted a mixed-method triangulation approach \cite{olsen2004triangulation} drawing from qualitative and quantitative sources. Interviews were conducted with the core members of the Zooniverse team, comprising the lead project founder, team architect, and two members of the Galaxy Zoo design team.  These individuals were selected because they were instrumental to both the beginnings of Zooniverse, and because they were responsible for key design and strategy decisions throughout.  Interviews were loosely based around the following three probes for triangulation that were designed to elicit reflections on the process and identify what was learnt along the way:
+
 \begin{enumerate}[itemsep=1mm]
 \item \emph{When you design and launch a new project now, what do you do differently than you would done at the start?}
 \item \emph{Were there any surprises, or unexpected outcomes?}
 \item \emph{What made projects most and least successful?}
 % \item \emph{What were your best ideas and worst mistakes?}
 \end{enumerate}
-\vspace{10pt}
-\caption{\emph{Probes for triangulation} - The interview process started with (and iteratively returned to) these four main questions as probes, to yield the main themes for analysis.}
-\label{tbl:questions}
-\end{center}
-\vspace{-18pt}
-\end{figure}
 
-% Our objective was to identify the ways that the team's concrete experiences and project outcomes influenced they way they, in turn, designed and managed citizen science projects.  In so doing, we sought to understand the team's view on the 
-
-To identify the insights that most influenced the decisions the team made when designing, launching and conducting new projects, we adopted a mixed-method triangulation approach \cite{olsen2004triangulation} drawing from qualitative and quantitative sources. Interviews were conducted with the core members of the Zooniverse team, comprising the lead project founder, team architect, and two members of the Galaxy Zoo design team.  These individuals were selected because they were instrumental to both the beginnings of Zooniverse, and because they were responsible for key design and strategy decisions throughout.  Interviews were loosely based around a set of questions (see Table \ref{tbl:questions}) that were designed to elicit reflections on the process and identify what was learnt along the way.   We conducted four interview sessions, two on one day, and two after the results of the first day were thematically arranged using an iterative grounded thematic analysis \cite{mazzolini2003sage}.  While the goal of the first was to generate potential themes, the second focused on validation and in-depth understanding of the themes described.  Prior to the interviews, and during thematic analysis, several other sources were consulted, including discussion boards for four Zooniverse projects, \emph{talk pages} for thirteen projects, as well as twenty six Zooniverse-related blogs. 
+We conducted four interview sessions, two on one day, and two after the results of the first day were thematically arranged using an iterative grounded thematic analysis \cite{mazzolini2003sage}.  While the goal of the first was to generate potential themes, the second focused on validation and in-depth understanding of the themes described.  Prior to the interviews, and during thematic analysis, several other sources were consulted, including discussion boards for four Zooniverse projects, \emph{talk pages} for thirteen projects, as well as twenty six Zooniverse-related blogs. 
 % These two individuals oversaw the design, development, launch, and management of the projects, and coordinated with specialised science teams on the post-processing of data and derivation of scientific results, as well as leading in several published findings.  
 
 % TODO:
@@ -259,14 +267,14 @@ In this section, we present the results of our analysis around the themes of \em
 
 \subsection{Citizen-led Investigations and Serendipitous Discoveries}
 
+The most discussed theme was that of citizen-led discoveries, an area not originally anticipated by neither the Zooniverse nor science teams.  The original workflow intended of the Zooniverse, was the derivation of results via the set of tasks selected by the science team, which were devised to investigate a pre-selected set of problems.  This workflow, the conventional path of most human computation systems, is illustrated by the `top path' of Figure \ref{fig:twopaths}, successfully yielded a majority of the findings for Zooniverse, such as as deriving a morphological classification of galaxies (e.g. \cite{fortson2011galaxy}).   
+
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.42\textwidth]{imgs/twopaths.png}
+\includegraphics[width=0.4\textwidth]{imgs/two_paths_2.png}
 \caption{\emph{Two paths to science} - The ``standard'' path (top) of human computation systems, where research questions are answered using annotations created by users performing tasks.  A second path (bottom), that of \emph{citizen-initiated serendipitous discovery}, where users initiate the process by pointing out or asking questions about subjects, spawning collaborative hypothesis generation in the discussion forums. Science teams, picking up on these discussion threads, then either perform a further investigation on their own, or start a collaborative investigation with the volunteers.}
 \label{fig:twopaths}
 \end{figure}
-
-The most discussed theme was that of citizen-led discoveries, an area not originally anticipated by neither the Zooniverse nor science teams.  The original workflow intended of the Zooniverse, was the derivation of results via the set of tasks selected by the science team, which were devised to investigate a pre-selected set of problems.  This workflow, the conventional path of most human computation systems, is illustrated by the `top path' of Figure \ref{fig:twopaths}, successfully yielded a majority of the findings for Zooniverse, such as as deriving a morphological classification of galaxies (e.g. \cite{fortson2011galaxy}).   
 
 However, the addition of discussion facilities opened a second pathway, which became apparent under a month after the Galaxy Zoo Forum first launched, when the citizen participant responsible for finding the ``Voorwerp'' posted her message that would ultimately mark the project's first citizen-initiated discovery.  This second, serendipitous ``path to science'', illustrated in the bottom path of Figure \ref{fig:twopaths}, meant that scientific questions that had not been anticipated might be identified and investigated by citizens themselves with various degrees of autonomy from the science teams.
 
@@ -457,6 +465,13 @@ To reduce the likelihood of long stretches of monotonous subjects in real datase
 %%   thread death
 
 However, even monotonous sequences of subjects sustained participation if they were \emph{could be performed quickly}. The team's interpretation of the resilience of user boredom for quick tasks was that such tasks provided a different kind of implicit reward feedback, pertaining to the feeling of accrued accomplishment, that is, finishing tasks quickly spurred sustained participation.  This effect was observed in Moon Zoo, where users were  keen to keep classifying thousands of photos of boulders in photos of the moon, despite their similar, monotonous appearaence, with little hope of variation.  This task was generally very quick to perform due to its simplicity and efficiency of interface. Participants also performed an average of $MMM$ classifications of Moon Zoo, compared to $YYY$ comparable tasks, for example in ZZZ, a substantially more difficult project.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\textwidth]{imgs/boxplot_avg_classifications.png}
+\caption{\emph{Average classifications per logged-in user} - \ldots}
+\label{fig:twopaths}
+\end{figure}
 
 % TODO:
 % Galaxy Zoo Craters vs Milky Way Project Bubbles - Essentially same task, but Bubbles much more complex due to arc tools - fill in MMM, YYY and ZZZ above with figures from these projects. Note that from March 8th 2012, the Milky Way Project changed to only include subjects which were guaranteed to contain a bubble - seemingly, no change has been made to the interface itself.
