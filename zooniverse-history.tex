@@ -151,52 +151,52 @@ We begin with a brief introduction to Zooniverse, followed by a presentation of 
 % We begin with a short history of the project in order to introduce readers with the context for the following discussion, followed by a dimensional design analysis of particular aspects of Zooniverse's deployment.  Finally, we discuss Zooniverse's team's perspective of the greatest difficulties for building more effective citizen science: $X$, $Y$ and $Z$, and ways that HCI research may be able to help.
 
 \section{Background}
-\begin{table*}
+\begin{table}
 \begin{center}
 \small
-\begin{tabular}{lcllclll}
+\begin{tabular}{p{2cm}lcllc}
 \hline
-Project & Status & URL & Launch & Domain & Users & Subjects & Task \\
+Project  & Launch & Domain & Users & Subjects & Task \\
 \hline
 \hline
-Galaxy Zoo & Retired & zoo1.galaxyzoo.org & 11 Jul 2007 & Space & 165,000 & 890,000 & Classifying \\
+Galaxy Zoo* & 07-07 & S & 165,000 & 890,000 & C \\
 \hline
-Galaxy Zoo 2 & Retired & zoo2.galaxyzoo.org & 16 Feb 2009 & Space & 223,965 & 304.122 & Classifying \\
-Galaxy Zoo Mergers & Retired & mergers.galaxyzoo.org & 23 Nov 2009 & Space & 20,588 & 58,956 & Classifying \\
+Galaxy Zoo* 2 & 02-09 & S & 223,965 & 304.122 & C \\
+Galaxy Zoo Mergers* & 11-09 & S & 20,588 & 58,956 & C \\
 \hline
-Solar Stormwatch & Active & solarstormwatch.com & 22 Feb 2010 & Space & 65,971 & YY,YYY & Classifying/Marking \\
-Galaxy Zoo Supernova & Retired & supernova.galaxyzoo.org & 26 Mar 2010 & Space & 37,150 & 76,376 & Classifying \\
-Galaxy Zoo: Hubble & Retired & zoo3.galaxyzoo.org & 17 Apr 2010 & Space & XX,XXX & ~200,000 & Classifying \\
-Moon Zoo & Active & moonzoo.org & 11 May 2010 & Space & 121,251 & 435,314 & Marking \\
-Old Weather & Active & oldweather.org & 12 Oct 2010 & Climate & 32,076 & YY,YYY & Transcribing \\
-The Milkyway Project & Active & milkywayproject.org & 07 Dec 2010 & Space & 57,675 & 35,695 & Marking \\
-Planet Hunters & Active & planethunters.org & 16 Dec 2010 & Space & 167,354 & 3,063,759 & Marking \\
+Solar Stormwatch & 02-10 & S & 65,971 & YY,YYY & C/M \\
+Galaxy Zoo Supernova* & 03-10 & S & 37,150 & 76,376 & C \\
+Galaxy Zoo: Hubble* & 04-10 & S & XX,XXX & ~200,000 & C \\
+Moon Zoo & 05-10 & S & 121,251 & 435,314 & M \\
+Old Weather & 10-10 & C & 32,076 & YY,YYY & T \\
+The Milkyway Project & 12-10 & S & 57,675 & 35,695 & M \\
+Planet Hunters & 12-10 & S & 167,354 & 3,063,759 & M \\
 \hline
-Ancient Lives & Active & ancientlives.org & 25 Jul 2011 & Humanities & 24,983 & 153,885 & Transcribing \\
-Ice Hunters & Retired & icehunters.org & 09 Aug 2011 & Space & 15,276 & YY,YYY & Classifying/Marking \\
-NEEMO & Active & neemo.zooniverse.org & 15 Oct 2011 & Space & X,XXX & YY,YYY & Classifying \\
-Whale FM & Active & whale.fm & 29 Nov 2011 & Nature & 2,150 & 15,531 & Classifying \\
+Ancient Lives & 07-11 & H & 24,983 & 153,885 & T \\
+Ice Hunters* & 08-11 & S & 15,276 & YY,YYY & C/M \\
+NEEMO & 10-11 & S & X,XXX & YY,YYY & C \\
+Whale FM & 11-11 & N & 2,150 & 15,531 & C \\
 \hline
-SETI Live & Active & setilive.org & 29 Feb 2012 & Space & 63,609 & 27,004 & Classifying \\
-Galaxy Zoo 4 & Active & galaxyzoo.org & 11 Sep 2012 & Space & 48,550 & 390,907 & Classifying \\
-Seafloor Explorer & Active & seafloorexplorer.org & 13 Sep 2012 & Nature & 14,099 & 123,077 & Marking \\
-Cyclone Center & Active & cyclonecenter.org & 27 Sep 2012 & Climate & 4,767 & 196,638 & Classifying \\
-Bat Detective & Active & batdetective.org & 02 Oct 2012 & Nature & 1,580 & 582,203 & Classifying \\
-Cell Slider & Active & cellslider.net & 23 Oct 2012 & Biology & 13,261 & 275,702 & Classifying \\
-Andromeda Project & Active & andromedaproject.org & 05 Dec 2012 & Space & 5,072 & 12,425 & Marking \\
-Snapshot Serengeti & Active & snapshotserengeti.org & 11 Dec 2012 & Nature & 22,173 & 1,240,727 & Classifying \\
+SETI Live & 02-12 & S & 63,609 & 27,004 & C \\
+Galaxy Zoo 4 & 09-12 & S & 48,550 & 390,907 & C \\
+Seafloor Explorer & 09-12 & N & 14,099 & 123,077 & M \\
+Cyclone Center & 09-12 & C & 4,767 & 196,638 & C \\
+Bat Detective & 10-12 & N & 1,580 & 582,203 & C \\
+Cell Slider & 10-12 & B & 13,261 & 275,702 & C \\
+Andromeda Project & 12-12 & S & 5,072 & 12,425 & M \\
+Snapshot Serengeti & 12-12 & N & 22,173 & 1,240,727 & C \\
 \hline
-Planet Four & Active & planetfour.org & 08 Jan 2013 & Space & 34,718 & 98,920 & Marking \\
-Notes from Nature & Active & notesfromnature.org & 22 Apr 2013 & Nature & 3,490 & 123,402 & Marking/Transcribing \\
-Space Warps & Active & spacewarps.org & 08 May 2013 & Space & 9,544 & 345,240 & Marking \\
-Worm Watch Lab & Active & wormwatchlab.org & 30 Jun 2013 & Biology & 3,251 & 74,016 & Classifying \\
+Planet Four & 01-13 & S & 34,718 & 98,920 & M \\
+Notes from Nature & 04-13 & N & 3,490 & 123,402 & M/T \\
+Space Warps & 05-13 & S & 9,544 & 345,240 & M \\
+Worm Watch Lab & 06-13 & B & 3,251 & 74,016 & C \\
 \hline
 \end{tabular}
 \normalsize
 \label{table:project-summary}
-\caption{Summary of Zooniverse projects past and present, including each projects status as of September 2013.  The 1.68 million assets in the various Galaxy Zoo projects are not unique, since galaxies in GZ1 were used in subsequent projects.}
+\caption{Summary of Zooniverse projects past and present, including each projects status as of September 2013.  The 1.68 million assets in the various Galaxy Zoo projects are not unique, since galaxies in GZ1 were used in subsequent projects. Domains: S -- space; C -- climate; H -- humanities; N -- nature; B -- biology. Tasks: C -- classifying; M -- marking; T -- transcribing. Projects marked with a * have been retired.}
 \end{center}
-\end{table*}
+\end{table}
 
 % According to neemo.zooniverse.org, NEEMO had 47,943 user validations, though this may differ from "logged-in users." Particularly because two figures are given - 485 volunteers joined the mission.
 Citizen-science systems be broadly categorised into those concerned with data collection (e.g., \cite{zook2010volunteered,wood2011ebird}), data analysis (e.g. \cite{westphal2005stardust,heinzelman2010crowdsourcing}), and problem-solving (e.g., \cite{khatib2011algorithm,cordero2012rna}).  Zooniverse projects fall into the \emph{data analysis} category.  Data, comprising, digital artifacts such as images, video and audio recordings, typically captured by cameras, telescopes and other equipment, are analysed by volunteers, who identify, classify, mark and label the phenomena that appear in them according to instructions given by the science team. As documented previously by Fortson et al \cite{fortson2011galaxy}, the first Zooniverse project, \emph{Galaxy Zoo}\footnote{Galaxy Zoo - \url{www.galaxyzoo.com}}, launched July 2007, engaged volunteers in the morphological classification of images of galaxies \cite{galaxyzoo-launch}. The early success of Galaxy Zoo (reaching more then 100,000 users by 2008) led the project team to branch out to new domains and task types. 
