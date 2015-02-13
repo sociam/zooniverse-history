@@ -1,4 +1,4 @@
 zooniverse-history
 ==================
 
-collaborative SOCIAM paper on the history of zooniverse
+This paper is and remains unpublished as of Feb 2015.
